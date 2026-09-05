@@ -199,7 +199,97 @@
           <span style="font-size: 0.75rem; color: #fff; opacity: 0.9;">READY TO EXPLORE</span>
         </div>
         <div class="project-strip-container" id="finishedList">
-          <!-- Populated by script.js -->
+          <!-- Camelot Web Tools -->
+          <div class="project-strip strip-cwt" data-id="cwt-flagship">
+            <div class="strip-bar-header">
+              <span>Web &amp; Windows Suite</span>
+              <span class="strip-tag">LIVE WEB &amp; DESKTOP</span>
+            </div>
+            <div class="strip-content">
+              <div class="strip-thumbnail-box" onclick="openProjectModal('cwt-flagship')" title="Click to view details">
+                <img src="assets/images/cwt-home.png" alt="Camelot Web Tools" loading="lazy" />
+              </div>
+              <div class="strip-details">
+                <h3>Camelot Web Tools</h3>
+                <p>Privacy-focused multi-tool utility suite built for everyday business, developer, and creative workflows with zero data collection.</p>
+                <div class="strip-meta">
+                  <span>React / Vite</span>
+                  <span>Electron</span>
+                  <span>Node.js CLI</span>
+                  <span>Privacy First</span>
+                  <span>TypeScript</span>
+                </div>
+              </div>
+              <a href="https://camelotwebtools.com" target="_blank" class="go-btn">
+                Visit Site! &gt;&gt;
+              </a>
+            </div>
+          </div>
+
+          <!-- Attention Perfection: 90's Me -->
+          <div class="project-strip strip-music" data-id="ap-90s-me">
+            <div class="strip-bar-header">
+              <span>Music Release</span>
+              <span class="strip-tag">MUSIC RELEASE</span>
+            </div>
+            <div class="strip-content">
+              <div class="strip-thumbnail-box" onclick="openProjectModal('ap-90s-me')" title="Click to view details">
+                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80" alt="Attention Perfection 90s Me" loading="lazy" />
+              </div>
+              <div class="strip-details">
+                <h3>Attention Perfection — &quot;90's Me&quot;</h3>
+                <p>Final polished pop-punk / alternative rock release under Attention Perfection featuring driving guitar riffs, anthemic hooks, and analog mixing.</p>
+                <div class="strip-meta">
+                  <span>Attention Perfection</span>
+                  <span>Pop Punk</span>
+                  <span>Studio Production</span>
+                  <span>Mastered Audio</span>
+                </div>
+                <div class="audio-player-strip">
+                  <button class="play-toggle-btn" onclick="toggleAudio(this, 'assets/audio/attention_perfection_90s_me.mp3')" title="Play 90's Me">▶</button>
+                  <div class="mini-equalizer">
+                    <div class="eq-bar"></div>
+                    <div class="eq-bar"></div>
+                    <div class="eq-bar"></div>
+                    <div class="eq-bar"></div>
+                    <div class="eq-bar"></div>
+                  </div>
+                  <span style="font-size: 0.7rem; color: #ffea00; font-family: var(--font-mono); font-weight: bold;">
+                    ATTENTION PERFECTION: 90'S ME (CLICK PLAY)
+                  </span>
+                </div>
+              </div>
+              <button class="go-btn" onclick="openProjectModal('ap-90s-me')">
+                Play Release! &gt;&gt;
+              </button>
+            </div>
+          </div>
+
+          <!-- We All Want Famous Friends (WAWFF) -->
+          <div class="project-strip strip-music" data-id="wawff-album">
+            <div class="strip-bar-header">
+              <span>Music Release</span>
+              <span class="strip-tag">ALBUM &amp; VIDEOS</span>
+            </div>
+            <div class="strip-content">
+              <div class="strip-thumbnail-box" onclick="openProjectModal('wawff-album')" title="Click to view details">
+                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80" alt="WAWFF Album" loading="lazy" />
+              </div>
+              <div class="strip-details">
+                <h3>&quot;We All Want Famous Friends&quot; (WAWFF)</h3>
+                <p>Full 12-track released songwriting album and companion music video series, featuring tracks like 'By You', 'Global Warming', 'Home', and 'Mexican Girl'.</p>
+                <div class="strip-meta">
+                  <span>Songwriting</span>
+                  <span>12 Tracks</span>
+                  <span>Music Videos</span>
+                  <span>Acoustic / Indie</span>
+                </div>
+              </div>
+              <button class="go-btn" onclick="openProjectModal('wawff-album')">
+                Explore Album! &gt;&gt;
+              </button>
+            </div>
+          </div>
         </div>
 
         <!-- SECTION 2: IN DEVELOPMENT & UPCOMING -->
@@ -209,7 +299,137 @@
             <span style="font-size: 0.75rem; color: #ffaa00; opacity: 0.9;">ACTIVE ROADMAP</span>
           </div>
           <div class="project-strip-container" id="devList">
-            <!-- Populated by script.js -->
+            <!-- Invasion Defense -->
+            <div class="project-strip strip-games" data-id="invasion-defense">
+              <div class="strip-bar-header">
+                <span>Mobile Game</span>
+                <span class="strip-tag">IN DEVELOPMENT</span>
+              </div>
+              <div class="strip-content">
+                <div class="strip-thumbnail-box" onclick="openProjectModal('invasion-defense')" title="Click to view details">
+                  <img src="assets/images/invasion-defense.jpg" alt="Invasion Defense" loading="lazy" />
+                </div>
+                <div class="strip-details">
+                  <h3>Invasion Defense: Global Disclosure Engine</h3>
+                  <p>Deep tactical grand strategy mobile game in active development. Features 200+ mutation nodes across 5 alien factions, 3D rotating globe projection, and radar air combat.</p>
+                  <div class="strip-meta">
+                    <span>Android</span>
+                    <span>Kotlin</span>
+                    <span>Jetpack Compose</span>
+                    <span>3D Projection</span>
+                    <span>Game Design</span>
+                  </div>
+                </div>
+                <button class="go-btn" onclick="openProjectModal('invasion-defense')">
+                  Game Specs! &gt;&gt;
+                </button>
+              </div>
+            </div>
+
+            <!-- AI Credit Report Auditor -->
+            <div class="project-strip strip-dev" data-id="credit-auditor">
+              <div class="strip-bar-header">
+                <span>Web Software</span>
+                <span class="strip-tag">IN DEVELOPMENT</span>
+              </div>
+              <div class="strip-content">
+                <div class="strip-thumbnail-box" onclick="openProjectModal('credit-auditor')" title="Click to view details">
+                  <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80" alt="Credit Auditor" loading="lazy" />
+                </div>
+                <div class="strip-details">
+                  <h3>AI Credit Report Auditor &amp; Dispute Generator</h3>
+                  <p>Intelligent web app in development powered by Gemini AI and PDF.js that parses Experian, TransUnion, and Equifax reports to detect reporting violations and auto-generate legal dispute letters.</p>
+                  <div class="strip-meta">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>Google Gemini AI</span>
+                    <span>PDF.js</span>
+                    <span>Tailwind CSS</span>
+                  </div>
+                </div>
+                <button class="go-btn" onclick="openProjectModal('credit-auditor')">
+                  View Details! &gt;&gt;
+                </button>
+              </div>
+            </div>
+
+            <!-- Genealogy Timeline Builder -->
+            <div class="project-strip strip-dev" data-id="genealogy-builder">
+              <div class="strip-bar-header">
+                <span>Web &amp; Bio-Data</span>
+                <span class="strip-tag">IN DEVELOPMENT</span>
+              </div>
+              <div class="strip-content">
+                <div class="strip-thumbnail-box" onclick="openProjectModal('genealogy-builder')" title="Click to view details">
+                  <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80" alt="Genealogy Timeline" loading="lazy" />
+                </div>
+                <div class="strip-details">
+                  <h3>Genealogy Timeline Builder</h3>
+                  <p>Interactive visual timeline and ancestral mapping platform that translates DNA migration narratives and historical family records into dynamic storytelling journeys.</p>
+                  <div class="strip-meta">
+                    <span>Bioinformatics</span>
+                    <span>Data Visualization</span>
+                    <span>Ancestry DNA</span>
+                    <span>Interactive Timelines</span>
+                  </div>
+                </div>
+                <button class="go-btn" onclick="openProjectModal('genealogy-builder')">
+                  View Roadmap! &gt;&gt;
+                </button>
+              </div>
+            </div>
+
+            <!-- Camelot Web Tools: Android App -->
+            <div class="project-strip strip-dev" data-id="cwt-android">
+              <div class="strip-bar-header">
+                <span>Mobile App</span>
+                <span class="strip-tag">IN DEVELOPMENT</span>
+              </div>
+              <div class="strip-content">
+                <div class="strip-thumbnail-box" onclick="openProjectModal('cwt-android')" title="Click to view details">
+                  <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=80" alt="CWT Android App" loading="lazy" />
+                </div>
+                <div class="strip-details">
+                  <h3>Camelot Web Tools: Android App</h3>
+                  <p>Official mobile companion bringing privacy-preserving utility suites, quick conversion tools, and client-side encryption directly to Android devices.</p>
+                  <div class="strip-meta">
+                    <span>Android</span>
+                    <span>Kotlin / Compose</span>
+                    <span>Offline Utilities</span>
+                    <span>Mobile Suite</span>
+                  </div>
+                </div>
+                <button class="go-btn" onclick="openProjectModal('cwt-android')">
+                  View Specs! &gt;&gt;
+                </button>
+              </div>
+            </div>
+
+            <!-- Camelot Health & Fitness -->
+            <div class="project-strip strip-dev" data-id="camelot-fitness">
+              <div class="strip-bar-header">
+                <span>Web &amp; Mobile</span>
+                <span class="strip-tag">IN DEVELOPMENT</span>
+              </div>
+              <div class="strip-content">
+                <div class="strip-thumbnail-box" onclick="openProjectModal('camelot-fitness')" title="Click to view details">
+                  <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Camelot Fitness" loading="lazy" />
+                </div>
+                <div class="strip-details">
+                  <h3>Camelot Health &amp; Fitness</h3>
+                  <p>Comprehensive health, workout tracking, and nutritional intelligence ecosystem spanning a modern web portal and companion mobile application.</p>
+                  <div class="strip-meta">
+                    <span>Health Tech</span>
+                    <span>Cross-Platform</span>
+                    <span>Performance Tracking</span>
+                    <span>Full Stack</span>
+                  </div>
+                </div>
+                <button class="go-btn" onclick="openProjectModal('camelot-fitness')">
+                  View Blueprint! &gt;&gt;
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
