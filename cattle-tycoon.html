@@ -3,46 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <title>The Cattle Tycoon Game | Simulation Systems &amp; AI Architecture</title>
   <meta name="description" content="Technical case study of The Cattle Game / Cow Game — an agricultural ranching simulation and genetics engine powered by React 19 and Google Gemini AI." />
   
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=2.2" />
   <link rel="icon" type="image/png" href="assets/images/cwt-app-icon.png">
 </head>
 <body>
 
-  <!-- Top Executive Status Bar -->
-  <aside class="exec-announcement-bar">
-    <div class="container announcement-inner">
-      <div class="announcement-item">
-        <span class="announcement-dot"></span>
-        <span>GAME SYSTEMS &amp; AI SIMULATION &bull; THE CATTLE GAME</span>
+  <!-- Top Executive HUD Bar -->
+  <aside class="exec-hud-bar">
+    <div class="container hud-inner">
+      <div class="hud-coords">
+        <span class="status-beacon"></span>
+        <span>GAME SYSTEMS &amp; AI SIMULATION // THE CATTLE GAME // OKLAHOMA CITY HQ</span>
       </div>
-      <div class="announcement-item">
-        <a href="https://ai.studio/apps/f34d9689-c2cc-42dc-b42c-600ed9680d95" target="_blank" rel="noopener" style="color: #38bdf8;">LIVE GOOGLE AI STUDIO PROTOTYPE &rarr;</a>
+      <div>
+        <a href="https://ai.studio/apps/f34d9689-c2cc-42dc-b42c-600ed9680d95" target="_blank" rel="noopener" style="color: var(--accent-gold);">LIVE GOOGLE AI STUDIO PROTOTYPE &rarr;</a>
       </div>
     </div>
   </aside>
 
-  <!-- Sticky Site Navigation -->
+  <!-- Straight-Edge Site Navigation -->
   <header class="site-header">
     <div class="container nav-container">
       <a href="index.html" class="brand-group">
-        <div class="brand-badge">WDA</div>
+        <div class="brand-monogram">WDA</div>
         <div class="brand-text">
           <span class="brand-name">William Danial Arthur</span>
-          <span class="brand-sub">Software Architect &bull; Tech Founder &bull; Mobile Dev</span>
+          <span class="brand-sub">Oklahoma City &bull; Tech Founder &bull; Mobile Dev</span>
         </div>
       </a>
 
       <nav>
         <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">&#9776;</button>
         <ul class="nav-links" id="navLinks">
-          <li><a href="index.html#flagshipProjects" class="nav-link">Flagship Systems</a></li>
+          <li><a href="index.html#flagshipSystems" class="nav-link">Flagship Systems</a></li>
           <li><a href="index.html#standaloneApps" class="nav-link">Mobile Apps</a></li>
-          <li><a href="index.html#architecture" class="nav-link">Architecture</a></li>
+          <li><a href="index.html#architecture" class="nav-link">Invariants</a></li>
           <li><a href="index.html#about" class="nav-link">About</a></li>
-          <li><a href="mailto:contact@williamdanialarthur.me" class="nav-btn">Direct Contact</a></li>
+          <li><a href="mailto:contact@williamdanialarthur.me" class="nav-cta">Direct Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -50,53 +53,53 @@
 
   <main>
     <!-- Project Hero -->
-    <section class="detail-hero">
+    <section class="detail-hero-sharp">
       <div class="container">
-        <a href="index.html" class="back-link">&larr; Back to Portfolio Overview</a>
-        <div class="detail-title-group">
+        <a href="index.html" class="back-link-sharp">&larr; Return to Systems Portfolio</a>
+        <div class="detail-head-group">
           <div>
-            <div class="project-badge-row">
-              <span class="badge badge-live">Active Production Prototype</span>
-              <span class="badge badge-platform">React 19 &bull; Google Gemini AI &bull; Game Systems</span>
+            <div class="card-status-strip">
+              <span class="sharp-tag tag-status-live">Active Production Prototype</span>
+              <span class="sharp-tag tag-arch">React 19 &bull; Google Gemini AI &bull; Game Systems</span>
             </div>
-            <h1 class="detail-main-title">The Cattle Tycoon Game</h1>
-            <p class="detail-subtitle">
+            <h1>The Cattle Tycoon Game</h1>
+            <p>
               A deep, strategic agricultural ranching and livestock genetics simulation combining commodity market trading, pedigree breeding, competitive halter judging, and Google Gemini AI narrative generation.
             </p>
           </div>
           <div>
-            <a href="https://ai.studio/apps/f34d9689-c2cc-42dc-b42c-600ed9680d95" target="_blank" rel="noopener" class="btn-primary">
+            <a href="https://ai.studio/apps/f34d9689-c2cc-42dc-b42c-600ed9680d95" target="_blank" rel="noopener" class="btn-solid">
               Launch on AI Studio &rarr;
             </a>
           </div>
         </div>
 
-        <div class="tech-tags">
-          <span class="tech-tag">React 19</span>
-          <span class="tech-tag">TypeScript 7</span>
-          <span class="tech-tag">Tailwind CSS v4</span>
-          <span class="tech-tag">Motion 12</span>
-          <span class="tech-tag">@google/genai 2.4.0</span>
-          <span class="tech-tag">Web Audio API</span>
-          <span class="tech-tag">Express 4.21</span>
+        <div class="card-tech-chips">
+          <span class="tech-chip">React 19</span>
+          <span class="tech-chip">TypeScript 7</span>
+          <span class="tech-chip">Tailwind CSS v4</span>
+          <span class="tech-chip">Motion 12</span>
+          <span class="tech-chip">@google/genai 2.4.0</span>
+          <span class="tech-chip">Web Audio API</span>
+          <span class="tech-chip">Express 4.21</span>
         </div>
       </div>
     </section>
 
     <!-- Main Content & Simulation Architecture Breakdown -->
-    <section class="detail-body-section">
-      <div class="container detail-layout-grid">
+    <section class="detail-layout-container">
+      <div class="container detail-split-grid">
         
         <!-- Left Main Column -->
-        <div class="detail-main-column">
+        <div class="detail-main-flow">
           
           <!-- Real Application Screenshot Showcase -->
-          <div class="detail-screenshot-showcase">
+          <div class="sharp-screenshot-frame">
             <img src="assets/images/cattle-tycoon-real.png" alt="The Cattle Game Live Simulation Interface Screenshot" />
           </div>
 
           <!-- Section 1: Executive Overview -->
-          <div class="detail-content-block">
+          <div class="detail-text-block">
             <h2>Simulation Vision &amp; Gameplay Architecture</h2>
             <p>
               <strong>The Cattle Game</strong> places the player at the helm of an expanding commercial ranch over a 10-year career (40 distinct quarterly seasons). Unlike idle clickers, the game enforces realistic economic trade-offs between genetic pedigree improvements, pasture acreage upkeep, commodity price fluctuations, and high-stakes livestock show competitions.
@@ -107,36 +110,36 @@
           </div>
 
           <!-- Section 2: Core Simulation Subsystems -->
-          <div class="detail-content-block">
+          <div class="detail-text-block">
             <h2>Core Simulation Subsystems</h2>
             
-            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-primary); margin: 20px 0 8px 0;">
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-white); margin: 20px 0 8px 0;">
               1. Multi-Species Genetics &amp; Pedigree Engine
             </h3>
             <p>
               Players breed 4 distinct livestock species (Chicken, Pig, Cow, Horse) across 5 rarity tiers (Common 1.0x, Uncommon 1.5x, Rare 2.5x, Epic 4.0x, and Legendary 7.0x). The breeding barn resolves sire and dam traits to calculate inherited coat variants, temperament modifiers, and show circuit conformation ratings.
             </p>
 
-            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-primary); margin: 20px 0 8px 0;">
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-white); margin: 20px 0 8px 0;">
               2. Seasonal Commodity Volatility Ticker
             </h3>
             <p>
               Commodity prices swing dynamically according to real agricultural demand curves:
             </p>
-            <ul class="project-highlights" style="margin-top: 10px;">
+            <ul class="card-spec-bullets" style="margin-top: 10px;">
               <li><strong>Prime Beef (per cwt):</strong> Base $280. Surges in Summer (1.25x BBQ season); dips in Winter (0.9x).</li>
               <li><strong>Cured Pork:</strong> Base $145. Peaks in Winter (1.25x holiday hams and roasts); dips in Summer (0.95x).</li>
               <li><strong>Cold Storage Arbitrage:</strong> Players construct refrigerated storage silos to hold slaughtered inventory until prices rebound.</li>
             </ul>
 
-            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-primary); margin: 20px 0 8px 0;">
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-white); margin: 20px 0 8px 0;">
               3. Google Gemini AI Contextual Orchestration (`@google/genai`)
             </h3>
             <p>
               Connected via the official Google GenAI 2.4.0 SDK, Gemini models generate dynamic, contextual commentary during livestock show circuit judging and live auction house bidding wars. Rather than generic responses, prompts are grounded with exact animal statistics (breed, coat mutation, condition score, halter rating).
             </p>
 
-            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-primary); margin: 20px 0 8px 0;">
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-white); margin: 20px 0 8px 0;">
               4. Procedural Web Audio Sound Synthesizer
             </h3>
             <p>
@@ -145,9 +148,9 @@
           </div>
 
           <!-- Section 3: Livestock Species & Economic Stats Table -->
-          <div class="detail-content-block">
+          <div class="detail-text-block">
             <h2>Livestock Production Matrix</h2>
-            <table class="spec-table">
+            <table class="linear-spec-table">
               <thead>
                 <tr>
                   <th>Species</th>
@@ -160,30 +163,30 @@
               <tbody>
                 <tr>
                   <td>Chicken (Poultry)</td>
-                  <td class="code-cell">$25</td>
-                  <td class="code-cell">$5</td>
-                  <td class="code-cell">$35</td>
+                  <td class="code-item">$25</td>
+                  <td class="code-item">$5</td>
+                  <td class="code-item">$35</td>
                   <td>No (Egg Cash Flow)</td>
                 </tr>
                 <tr>
                   <td>Pig (Swine)</td>
-                  <td class="code-cell">$150</td>
-                  <td class="code-cell">$30</td>
-                  <td class="code-cell">$250</td>
+                  <td class="code-item">$150</td>
+                  <td class="code-item">$30</td>
+                  <td class="code-item">$250</td>
                   <td>No (Bulk Meat)</td>
                 </tr>
                 <tr>
                   <td>Cow (Cattle)</td>
-                  <td class="code-cell">$800</td>
-                  <td class="code-cell">$120</td>
-                  <td class="code-cell">$1,200</td>
+                  <td class="code-item">$800</td>
+                  <td class="code-item">$120</td>
+                  <td class="code-item">$1,200</td>
                   <td><strong>Yes (Primary Show Stock)</strong></td>
                 </tr>
                 <tr>
                   <td>Horse (Equine)</td>
-                  <td class="code-cell">$2,000</td>
-                  <td class="code-cell">$200</td>
-                  <td class="code-cell">N/A (No slaughter)</td>
+                  <td class="code-item">$2,000</td>
+                  <td class="code-item">$200</td>
+                  <td class="code-item">N/A (No slaughter)</td>
                   <td><strong>Yes (High-Value Bloodlines)</strong></td>
                 </tr>
               </tbody>
@@ -193,71 +196,71 @@
         </div>
 
         <!-- Right Sidebar Info Column -->
-        <aside class="detail-sidebar">
+        <aside class="detail-sidebar-flow">
           
-          <div class="sidebar-widget">
+          <div class="sharp-sidebar-card">
             <h3>Simulation Metrics</h3>
-            <ul class="sidebar-stat-list">
+            <ul class="sidebar-data-list">
               <li>
-                <span class="stat-k">Career Length:</span>
-                <span class="stat-v">10 Years (40 Seasons)</span>
+                <span class="meta-k">Career Length:</span>
+                <span class="meta-v">10 Years (40 Seasons)</span>
               </li>
               <li>
-                <span class="stat-k">Livestock Species:</span>
-                <span class="stat-v">4 Primary Classes</span>
+                <span class="meta-k">Livestock Species:</span>
+                <span class="meta-v">4 Primary Classes</span>
               </li>
               <li>
-                <span class="stat-k">Rarity Tiers:</span>
-                <span class="stat-v">5 Tiers (1x to 7x)</span>
+                <span class="meta-k">Rarity Tiers:</span>
+                <span class="meta-v">5 Tiers (1x to 7x)</span>
               </li>
               <li>
-                <span class="stat-k">AI Engine:</span>
-                <span class="stat-v">Gemini 2.4.0 SDK</span>
+                <span class="meta-k">AI Engine:</span>
+                <span class="meta-v">Gemini 2.4.0 SDK</span>
               </li>
               <li>
-                <span class="stat-k">Sound Engine:</span>
-                <span class="stat-v">Web Audio Procedural</span>
+                <span class="meta-k">Sound Engine:</span>
+                <span class="meta-v">Web Audio Procedural</span>
               </li>
             </ul>
           </div>
 
-          <div class="sidebar-widget">
+          <div class="sharp-sidebar-card">
             <h3>Regional Ranch Choices</h3>
-            <ul class="sidebar-stat-list">
+            <ul class="sidebar-data-list">
               <li>
-                <span class="stat-k">Texas Hill Country:</span>
-                <span class="stat-v">Hardy Angus/Longhorn</span>
+                <span class="meta-k">Texas Hill Country:</span>
+                <span class="meta-v">Hardy Angus/Longhorn</span>
               </li>
               <li>
-                <span class="stat-k">Montana Plains:</span>
-                <span class="stat-v">High-Protein Grass</span>
+                <span class="meta-k">Montana Plains:</span>
+                <span class="meta-v">High-Protein Grass</span>
               </li>
               <li>
-                <span class="stat-k">Kentucky Bluegrass:</span>
-                <span class="stat-v">Elite Equine Studs</span>
+                <span class="meta-k">Kentucky Bluegrass:</span>
+                <span class="meta-v">Elite Equine Studs</span>
               </li>
               <li>
-                <span class="stat-k">California Valley:</span>
-                <span class="stat-v">Organic Margins</span>
+                <span class="meta-k">California Valley:</span>
+                <span class="meta-v">Organic Margins</span>
               </li>
               <li>
-                <span class="stat-k">Iowa Corn Belt:</span>
-                <span class="stat-v">Cheap Grain Feed</span>
+                <span class="meta-k">Iowa Corn Belt:</span>
+                <span class="meta-v">Cheap Grain Feed</span>
               </li>
             </ul>
           </div>
 
-          <div class="sidebar-widget">
+          <div class="sharp-sidebar-card">
             <h3>Related Flagship Systems</h3>
-            <ul class="sidebar-stat-list">
+            <ul class="sidebar-data-list">
               <li>
-                <a href="cwt.html" style="font-weight: 600;">Camelot Web Tools (Web) &rarr;</a>
+                <a href="cwt.html" style="font-weight: 600; color: var(--accent-blue);">Camelot Web Tools (Web) &rarr;</a>
               </li>
               <li>
-                <a href="cwt-mobile.html" style="font-weight: 600;">CWT Mobile App (Android) &rarr;</a>
+                <a href="cwt-mobile.html" style="font-weight: 600; color: var(--accent-blue);">CWT Mobile App (Android) &rarr;</a>
               </li>
               <li>
-                <a href="origo.html" style="font-weight: 600;">ORIGO Migration Atlas &rarr;</a>
+                <a href="origo.html" style="font-weight: 600; color: var(--accent-blue);">ORIGO Migration Atlas &rarr;</a>
               </li>
             </ul>
           </div>
@@ -268,18 +271,18 @@
     </section>
   </main>
 
-  <!-- Site Footer -->
+  <!-- Straight-Edge Footer -->
   <footer class="site-footer">
-    <div class="container footer-bottom">
+    <div class="container footer-sub-bar">
       <div>
         &copy; 2026 William Danial Arthur. All rights reserved.
       </div>
       <div>
-        <a href="index.html" style="color: #94a3b8;">&larr; Return to Home Portfolio</a>
+        <a href="index.html" style="color: var(--text-muted);">&larr; Return to Systems Portfolio</a>
       </div>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=2.2"></script>
 </body>
 </html>
