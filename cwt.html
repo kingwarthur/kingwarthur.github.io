@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camelot Web Tools | Technical Architecture &amp; Case Study</title>
+  <meta name="description" content="Technical deep dive into Camelot Web Tools — 100% client-side, local-first utility suite featuring 79 professional tools, vector PDF generation, and integer-cent precision." />
+  
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/images/cwt-app-icon.png">
+</head>
+<body>
+
+  <!-- Top Executive Status Bar -->
+  <aside class="exec-announcement-bar">
+    <div class="container announcement-inner">
+      <div class="announcement-item">
+        <span class="announcement-dot"></span>
+        <span>FLAGSHIP PRODUCT CASE STUDY &bull; CAMELOT WEB TOOLS</span>
+      </div>
+      <div class="announcement-item">
+        <a href="https://camelotwebtools.com" target="_blank" rel="noopener" style="color: #38bdf8;">LIVE AT CAMELOTWEBTOOLS.COM &rarr;</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-group">
+        <div class="brand-badge">WDA</div>
+        <div class="brand-text">
+          <span class="brand-name">William Danial Arthur</span>
+          <span class="brand-sub">Software Architect &bull; Tech Founder &bull; Mobile Dev</span>
+        </div>
+      </a>
+
+      <nav>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html#flagshipProjects" class="nav-link">Flagship Systems</a></li>
+          <li><a href="index.html#standaloneApps" class="nav-link">Mobile Apps</a></li>
+          <li><a href="index.html#architecture" class="nav-link">Architecture</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="mailto:contact@williamdanialarthur.me" class="nav-btn">Direct Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Project Hero -->
+    <section class="detail-hero">
+      <div class="container">
+        <a href="index.html" class="back-link">&larr; Back to Portfolio Overview</a>
+        <div class="detail-title-group">
+          <div>
+            <div class="project-badge-row">
+              <span class="badge badge-live">Live Commercial Suite</span>
+              <span class="badge badge-platform">Web &bull; Windows Desktop &bull; MCP</span>
+            </div>
+            <h1 class="detail-main-title">Camelot Web Tools (CWT)</h1>
+            <p class="detail-subtitle">
+              A 100% client-side, local-first utility suite featuring 79 professional financial calculators, developer encoders, vector PDF engines, and business document builders.
+            </p>
+          </div>
+          <div>
+            <a href="https://camelotwebtools.com" target="_blank" rel="noopener" class="btn-primary">
+              Launch camelotwebtools.com &rarr;
+            </a>
+          </div>
+        </div>
+
+        <div class="tech-tags">
+          <span class="tech-tag">React 18</span>
+          <span class="tech-tag">TypeScript</span>
+          <span class="tech-tag">Vite</span>
+          <span class="tech-tag">Tailwind CSS</span>
+          <span class="tech-tag">pdf-lib</span>
+          <span class="tech-tag">IndexedDB</span>
+          <span class="tech-tag">Electron (NSIS)</span>
+          <span class="tech-tag">MCP Protocol</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content & Architecture Breakdown -->
+    <section class="detail-body-section">
+      <div class="container detail-layout-grid">
+        
+        <!-- Left Main Column -->
+        <div class="detail-main-column">
+          
+          <!-- Real Application Screenshot Showcase -->
+          <div class="detail-screenshot-showcase">
+            <img src="assets/images/cwt-desktop-real.png" alt="Camelot Web Tools Live Web Application Screenshot" />
+          </div>
+
+          <!-- Section 1: Executive Overview -->
+          <div class="detail-content-block">
+            <h2>Executive Overview &amp; Problem Space</h2>
+            <p>
+              Most online document builders and financial utilities act as lead-generation traps or data-harvesting funnels. Everyday tasks like itemizing a receipt, merging two confidential PDFs, generating a contractor agreement, or converting sensitive bank statements into CSV often require uploading unencrypted files to third-party cloud servers.
+            </p>
+            <p>
+              <strong>Camelot Web Tools</strong> was built as a zero-cloud alternative. Every algorithm, conversion pipeline, and file generation engine runs completely inside the client's browser sandbox, Web Workers, or local desktop runtime. User documents and data never touch an external database or tracking server.
+            </p>
+          </div>
+
+          <!-- Section 2: Core Engineering Invariants -->
+          <div class="detail-content-block">
+            <h2>Core Engineering Invariants</h2>
+            
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-primary); margin: 20px 0 8px 0;">
+              1. Integer-Cent Currency Arithmetic
+            </h3>
+            <p>
+              To eliminate JavaScript's inherent IEEE-754 floating-point rounding errors (e.g. <code>0.1 + 0.2 === 0.30000000000000004</code>), all 18 financial tools, tax estimators, and invoice generators store, compute, and validate monetary balances strictly as integer cents. Currency formatting occurs exclusively at the final view layer.
+            </p>
+
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-primary); margin: 20px 0 8px 0;">
+              2. Vector PDF Generation &amp; In-Memory Bates Stamping
+            </h3>
+            <p>
+              CWT utilizes <code>pdf-lib</code> and direct canvas rendering to construct clean vector documents in-memory. The Bates stamping engine processes multi-megabyte document bundles without server-side queues, preventing sequence collisions through deterministic local numbering indices.
+            </p>
+
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-primary); margin: 20px 0 8px 0;">
+              3. Model Context Protocol (MCP) Server Suite
+            </h3>
+            <p>
+              To extend CWT's capabilities to artificial intelligence workflows, all 79 utility schemas are packaged into <code>camelotwebtools-mcp</code>, allowing Claude, Gemini, and local LLMs to invoke verified, deterministic financial and document calculations over standard MCP JSON-RPC pipes.
+            </p>
+          </div>
+
+          <!-- Section 3: Technical Specifications Table -->
+          <div class="detail-content-block">
+            <h2>System Specifications</h2>
+            <table class="spec-table">
+              <thead>
+                <tr>
+                  <th>Architecture Layer</th>
+                  <th>Implementation</th>
+                  <th>Primary Invariant</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Frontend Framework</td>
+                  <td class="code-cell">React 18.3, TypeScript 5.6, Vite</td>
+                  <td>Strict type validation, zero runtime errors</td>
+                </tr>
+                <tr>
+                  <td>Styling Architecture</td>
+                  <td class="code-cell">Tailwind CSS, CSS Custom Properties</td>
+                  <td>Anti-AI slop: WCAG AAA contrast (19:1 headings)</td>
+                </tr>
+                <tr>
+                  <td>Storage Layer</td>
+                  <td class="code-cell">IndexedDB (idb wrapper)</td>
+                  <td>100% local persistence, zero cloud telemetry</td>
+                </tr>
+                <tr>
+                  <td>Document Processing</td>
+                  <td class="code-cell">pdf-lib, fontkit, PapaParse</td>
+                  <td>Vector outputs, zero server uploads</td>
+                </tr>
+                <tr>
+                  <td>Desktop Packaging</td>
+                  <td class="code-cell">Electron 33, NSIS Windows Installer</td>
+                  <td>Offline execution, sandboxed node integration</td>
+                </tr>
+                <tr>
+                  <td>AI Integration</td>
+                  <td class="code-cell">camelotwebtools-mcp (Node.js SDK)</td>
+                  <td>Deterministic tool calling schemas for LLMs</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+        <!-- Right Sidebar Info Column -->
+        <aside class="detail-sidebar">
+          
+          <div class="sidebar-widget">
+            <h3>Project Metrics</h3>
+            <ul class="sidebar-stat-list">
+              <li>
+                <span class="stat-k">Status:</span>
+                <span class="stat-v" style="color: #065f46;">Live Commercial Suite</span>
+              </li>
+              <li>
+                <span class="stat-k">Total Utilities:</span>
+                <span class="stat-v">79 Active Tools</span>
+              </li>
+              <li>
+                <span class="stat-k">Data Telemetry:</span>
+                <span class="stat-v">0 bytes (Zero Cloud)</span>
+              </li>
+              <li>
+                <span class="stat-k">Tracking Cookies:</span>
+                <span class="stat-v">0 Cookies</span>
+              </li>
+              <li>
+                <span class="stat-k">Live Domain:</span>
+                <span class="stat-v">camelotwebtools.com</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Official White &amp; Blue Branding</h3>
+            <div style="display: flex; align-items: center; gap: 16px; margin-bottom: 16px;">
+              <img src="assets/images/cwt-crown-icon.png" alt="Official Camelot Crown Icon" style="width: 64px; height: 64px; border-radius: var(--radius-sm); border: 1px solid var(--border-light);" />
+              <div>
+                <strong style="color: var(--text-primary); font-size: 0.9375rem;">Official Crown Mark</strong>
+                <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 2px;">
+                  High-contrast White &amp; Slate-Blue commercial identity.
+                </p>
+              </div>
+            </div>
+            <p style="font-size: 0.8125rem; color: var(--text-secondary); line-height: 1.5;">
+              Built under strict design standards: no garish green/black icons, no neon borders, and zero synthetic AI mesh gradients.
+            </p>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Related Flagship Systems</h3>
+            <ul class="sidebar-stat-list">
+              <li>
+                <a href="cwt-mobile.html" style="font-weight: 600;">CWT Mobile App (Android) &rarr;</a>
+              </li>
+              <li>
+                <a href="cwt-standalone-apps.html" style="font-weight: 600;">7 Standalone Mobile Apps &rarr;</a>
+              </li>
+              <li>
+                <a href="cattle-tycoon.html" style="font-weight: 600;">The Cattle Tycoon Game &rarr;</a>
+              </li>
+              <li>
+                <a href="origo.html" style="font-weight: 600;">ORIGO Migration Atlas &rarr;</a>
+              </li>
+            </ul>
+          </div>
+
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div>
+        &copy; 2026 William Danial Arthur. All rights reserved.
+      </div>
+      <div>
+        <a href="index.html" style="color: #94a3b8;">&larr; Return to Home Portfolio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

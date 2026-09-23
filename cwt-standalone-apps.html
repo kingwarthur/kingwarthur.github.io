@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CWT Standalone Android Apps | Production Catalog &amp; Architecture</title>
+  <meta name="description" content="Production catalog of 7 standalone Android applications developed by William Danial Arthur — compiled, signed, and ready for Google Play release." />
+  
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/images/cwt-app-icon.png">
+</head>
+<body>
+
+  <!-- Top Executive Status Bar -->
+  <aside class="exec-announcement-bar">
+    <div class="container announcement-inner">
+      <div class="announcement-item">
+        <span class="announcement-dot"></span>
+        <span>MOBILE PRODUCTION CATALOG &bull; 7 STANDALONE ANDROID APPLICATIONS</span>
+      </div>
+      <div class="announcement-item">
+        <span>ALL BUNDLES COMPILED, SIGNED (.AAB), AND VERIFIED FOR GOOGLE PLAY</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-group">
+        <div class="brand-badge">WDA</div>
+        <div class="brand-text">
+          <span class="brand-name">William Danial Arthur</span>
+          <span class="brand-sub">Software Architect &bull; Tech Founder &bull; Mobile Dev</span>
+        </div>
+      </a>
+
+      <nav>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html#flagshipProjects" class="nav-link">Flagship Systems</a></li>
+          <li><a href="cwt-mobile.html" class="nav-link">CWT Mobile Hub</a></li>
+          <li><a href="index.html#architecture" class="nav-link">Architecture</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="mailto:contact@williamdanialarthur.me" class="nav-btn">Direct Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Project Hero -->
+    <section class="detail-hero">
+      <div class="container">
+        <a href="index.html" class="back-link">&larr; Back to Portfolio Overview</a>
+        <div class="detail-title-group">
+          <div>
+            <div class="project-badge-row">
+              <span class="badge badge-live">7 Production Bundles (.AAB)</span>
+              <span class="badge badge-platform">Android SDK 34+ / Target API 36</span>
+            </div>
+            <h1 class="detail-main-title">CWT Standalone Mobile Applications</h1>
+            <p class="detail-subtitle">
+              Single-purpose, high-focus Android utilities engineered from the Camelot ecosystem. Each application features an isolated native Android wrapper, verified store graphical assets, and 100% offline data sovereignty.
+            </p>
+          </div>
+          <div>
+            <a href="cwt-mobile.html" class="btn-secondary">
+              View All-in-One Hub &rarr;
+            </a>
+          </div>
+        </div>
+
+        <div class="tech-tags">
+          <span class="tech-tag">Kotlin 2.x</span>
+          <span class="tech-tag">Android API 36</span>
+          <span class="tech-tag">Signed Release .AAB</span>
+          <span class="tech-tag">Scoped Storage</span>
+          <span class="tech-tag">Zero Telemetry</span>
+          <span class="tech-tag">Google Play Console Ready</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content & Apps Catalog -->
+    <section class="detail-body-section">
+      <div class="container">
+
+        <!-- Architecture Summary Card -->
+        <div style="background: #ffffff; border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 48px; box-shadow: var(--shadow-card);">
+          <h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-primary); margin-bottom: 12px;">
+            Standalone Production &amp; Distribution Architecture
+          </h2>
+          <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 20px;">
+            To maximize user choice and capture search intent across Google Play, key Camelot utilities were unbundled into dedicated standalone applications. Each app is compiled as a self-contained Android App Bundle (<code>.aab</code>) signed with the official Camelot production keystore, paired with custom 512 &times; 512 icons, 1024 &times; 500 promotional graphics, and phone screenshots.
+          </p>
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; border-top: 1px solid var(--border-light); padding-top: 20px;">
+            <div>
+              <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Signing Keystore</span>
+              <p style="font-family: var(--font-mono); font-weight: 600; color: var(--text-primary); font-size: 0.8125rem;">cwt-release.jks</p>
+            </div>
+            <div>
+              <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Validity Period</span>
+              <p style="font-family: var(--font-mono); font-weight: 600; color: var(--text-primary); font-size: 0.8125rem;">Valid to 2054</p>
+            </div>
+            <div>
+              <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Target Android OS</span>
+              <p style="font-family: var(--font-mono); font-weight: 600; color: var(--text-primary); font-size: 0.8125rem;">Android 15+ (API 36)</p>
+            </div>
+            <div>
+              <span style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Minimum Android OS</span>
+              <p style="font-family: var(--font-mono); font-weight: 600; color: var(--text-primary); font-size: 0.8125rem;">Android 11+ (API 30)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 Applications Grid -->
+        <div style="display: flex; flex-direction: column; gap: 48px;">
+
+          <!-- APP 1: DEBT PAYOFF CALCULATOR -->
+          <div class="project-card">
+            <div class="project-media-col phone-preview-layout" style="min-height: 320px;">
+              <div class="phone-mock-frame" style="max-width: 220px;">
+                <img src="assets/images/cwt-standalone-debt.png" alt="Debt Payoff Calculator Android UI" />
+              </div>
+            </div>
+            <div class="project-info-col">
+              <div>
+                <div class="project-badge-row">
+                  <span class="badge badge-live">Verified .AAB</span>
+                  <span class="badge badge-platform">15.32 MB</span>
+                </div>
+                <h3 class="project-title">1. Debt Payoff Calculator</h3>
+                <p class="project-description">
+                  Advanced loan and credit card repayment engine simulating Snowball (lowest balance first) and Avalanche (highest interest first) strategies. Features dynamic payoff charts, total interest savings calculations, and print-ready debt schedule exports.
+                </p>
+                <div class="tech-tags">
+                  <span class="tech-tag">com.camelotwebtools.debtpayoff</span>
+                  <span class="tech-tag">Finance</span>
+                  <span class="tech-tag">Integer Cents</span>
+                  <span class="tech-tag">Offline</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- APP 2: QUICK BUDGET -->
+          <div class="project-card featured-reverse">
+            <div class="project-media-col phone-preview-layout" style="min-height: 320px;">
+              <div class="phone-mock-frame" style="max-width: 220px;">
+                <img src="assets/images/cwt-standalone-budget.png" alt="Quick Budget Android UI" />
+              </div>
+            </div>
+            <div class="project-info-col">
+              <div>
+                <div class="project-badge-row">
+                  <span class="badge badge-live">Verified .AAB</span>
+                  <span class="badge badge-platform">15.32 MB</span>
+                </div>
+                <h3 class="project-title">2. Quick Budget</h3>
+                <p class="project-description">
+                  Zero-based personal and household budgeting tool. Allocates monthly net income across essential living expenses, savings buffers, and discretionary spending with real-time percentage gauges and local persistence.
+                </p>
+                <div class="tech-tags">
+                  <span class="tech-tag">com.camelotwebtools.quickbudget</span>
+                  <span class="tech-tag">Productivity</span>
+                  <span class="tech-tag">Local Storage</span>
+                  <span class="tech-tag">Zero Cloud</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- APP 3: INVOICE GENERATOR PRO -->
+          <div class="project-card">
+            <div class="project-media-col phone-preview-layout" style="min-height: 320px;">
+              <div class="phone-mock-frame" style="max-width: 220px;">
+                <img src="assets/images/cwt-standalone-invoice.png" alt="Invoice Generator Pro Android UI" />
+              </div>
+            </div>
+            <div class="project-info-col">
+              <div>
+                <div class="project-badge-row">
+                  <span class="badge badge-live">Verified .AAB</span>
+                  <span class="badge badge-platform">15.32 MB</span>
+                </div>
+                <h3 class="project-title">3. Invoice Generator Pro</h3>
+                <p class="project-description">
+                  Mobile commercial invoicing utility for small businesses and freelancers. Generates vectorized, print-ready PDF invoices with custom line items, tax rate multipliers, payment instructions, client details, and Bates stamping.
+                </p>
+                <div class="tech-tags">
+                  <span class="tech-tag">com.camelotwebtools.invoicepro</span>
+                  <span class="tech-tag">Business</span>
+                  <span class="tech-tag">pdf-lib</span>
+                  <span class="tech-tag">Vector PDF</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- APP 4: RECEIPT ITEMIZER PRO -->
+          <div class="project-card featured-reverse">
+            <div class="project-media-col phone-preview-layout" style="min-height: 320px;">
+              <div class="phone-mock-frame" style="max-width: 220px;">
+                <img src="assets/images/cwt-standalone-receipt.png" alt="Receipt Itemizer Pro Android UI" />
+              </div>
+            </div>
+            <div class="project-info-col">
+              <div>
+                <div class="project-badge-row">
+                  <span class="badge badge-live">Verified .AAB</span>
+                  <span class="badge badge-platform">34.03 MB</span>
+                </div>
+                <h3 class="project-title">4. Receipt Itemizer Pro</h3>
+                <p class="project-description">
+                  Comprehensive expense itemization and tax deduction tracker. Allows contractors and business travelers to catalog purchases, split line items by category, and export organized expense reports in tabular CSV or PDF format.
+                </p>
+                <div class="tech-tags">
+                  <span class="tech-tag">com.camelotwebtools.receiptitemizer</span>
+                  <span class="tech-tag">Tax &amp; Expenses</span>
+                  <span class="tech-tag">CSV Normalizer</span>
+                  <span class="tech-tag">Scoped Storage</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- APP 5: SUBSCRIPTION MANAGER -->
+          <div class="project-card">
+            <div class="project-media-col phone-preview-layout" style="min-height: 320px;">
+              <div class="phone-mock-frame" style="max-width: 220px;">
+                <img src="assets/images/cwt-standalone-subscription.png" alt="Subscription Manager Android UI" />
+              </div>
+            </div>
+            <div class="project-info-col">
+              <div>
+                <div class="project-badge-row">
+                  <span class="badge badge-live">Verified .AAB</span>
+                  <span class="badge badge-platform">15.39 MB</span>
+                </div>
+                <h3 class="project-title">5. Subscription Manager</h3>
+                <p class="project-description">
+                  Recurring service and SaaS cost auditor. Computes annualized spending burdens, tracks upcoming renewal dates, and alerts users to recurring financial drains without requiring access to linked banking portals.
+                </p>
+                <div class="tech-tags">
+                  <span class="tech-tag">com.camelotwebtools.subscriptionmanager</span>
+                  <span class="tech-tag">Personal Finance</span>
+                  <span class="tech-tag">Privacy First</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- APP 6: TIME TRACK ANALYZER -->
+          <div class="project-card featured-reverse">
+            <div class="project-media-col phone-preview-layout" style="min-height: 320px;">
+              <div class="phone-mock-frame" style="max-width: 220px;">
+                <img src="assets/images/cwt-standalone-timetrack.png" alt="Time Track Analyzer Android UI" />
+              </div>
+            </div>
+            <div class="project-info-col">
+              <div>
+                <div class="project-badge-row">
+                  <span class="badge badge-live">Verified .AAB</span>
+                  <span class="badge badge-platform">15.32 MB</span>
+                </div>
+                <h3 class="project-title">6. Time Track Analyzer</h3>
+                <p class="project-description">
+                  Project timekeeper and billable rate auditor. Tracks active task hours across clients, calculates overtime and contract margins, and outputs formal timesheets for client submission.
+                </p>
+                <div class="tech-tags">
+                  <span class="tech-tag">com.camelotwebtools.timetracker</span>
+                  <span class="tech-tag">Contracting</span>
+                  <span class="tech-tag">Timesheet PDF</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- APP 7: EXPENSE LOG & ANALYZER -->
+          <div class="project-card">
+            <div class="project-media-col phone-preview-layout" style="min-height: 320px;">
+              <div class="phone-mock-frame" style="max-width: 220px;">
+                <img src="assets/images/cwt-standalone-expense.png" alt="Expense Log Android UI" />
+              </div>
+            </div>
+            <div class="project-info-col">
+              <div>
+                <div class="project-badge-row">
+                  <span class="badge badge-live">Verified .AAB</span>
+                  <span class="badge badge-platform">15.32 MB</span>
+                </div>
+                <h3 class="project-title">7. Expense Log &amp; Analyzer</h3>
+                <p class="project-description">
+                  Direct ledger application for monitoring daily, weekly, and monthly cash expenditures. Classifies variable expenses against fixed overhead to prevent month-end cash flow surprises.
+                </p>
+                <div class="tech-tags">
+                  <span class="tech-tag">com.camelotwebtools.expenselog</span>
+                  <span class="tech-tag">Accounting</span>
+                  <span class="tech-tag">Integer Cents</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div>
+        &copy; 2026 William Danial Arthur. All rights reserved.
+      </div>
+      <div>
+        <a href="index.html" style="color: #94a3b8;">&larr; Return to Home Portfolio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -3,531 +3,569 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>William Danial Arthur | Portfolio (WDA.me)</title>
-  <meta name="description" content="Portfolio of William Danial Arthur - Camelot Web Tools, Mobile Games, Web Software, and Music Releases." />
+  <title>William Danial Arthur | Senior Software Engineer &amp; Tech Founder</title>
+  <meta name="description" content="Portfolio of William Danial Arthur — Founder of Camelot Web Tools, Android Mobile App Developer, Game Systems Architect, and Bioinformatics Technologist." />
   
-  <!-- Early 2000s Web Fonts & Stylesheet -->
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕹️</text></svg>">
+  <link rel="icon" type="image/png" href="assets/images/cwt-app-icon.png">
 </head>
 <body>
 
-  <div class="portal-container">
-    
-    <!-- TOP NETWORK BAR -->
-    <header class="top-network-bar">
-      <div class="network-brand">
-        <span>★</span> WILLIAMDANIALARTHUR.ME NETWORK <span>★</span>
+  <!-- Top Executive Status Bar -->
+  <aside class="exec-announcement-bar">
+    <div class="container announcement-inner">
+      <div class="announcement-item">
+        <span class="announcement-dot"></span>
+        <span>ACTIVE PORTFOLIO &bull; LOCAL-FIRST ARCHITECTURE</span>
       </div>
-      <div class="network-date">
-        PROJECT ARCHIVE • CURATED RELEASES
+      <div class="announcement-item">
+        <span>CAMELOT WEB TOOLS (WEB &bull; DESKTOP &bull; ANDROID) &bull; ORIGO 4D &bull; THE CATTLE GAME</span>
       </div>
-    </header>
+    </div>
+  </aside>
 
-    <!-- HEADER HERO BANNER -->
-    <div class="header-hero">
-      <a href="#" class="logo-bubble" title="William Danial Arthur">
-        <div class="splat-icon">W</div>
-        <div class="logo-text-group">
-          <h1>WDA.ME</h1>
-          <span class="logo-domain">William Danial Arthur</span>
+  <!-- Sticky Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-group">
+        <div class="brand-badge">WDA</div>
+        <div class="brand-text">
+          <span class="brand-name">William Danial Arthur</span>
+          <span class="brand-sub">Software Architect &bull; Tech Founder &bull; Mobile Dev</span>
         </div>
       </a>
 
-      <div class="header-badges">
-        <div class="hero-pill-badge">
-          <span>🚀</span> <span>CREATIVE TECHNOLOGIST &amp; PRODUCER</span>
+      <nav>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#flagshipProjects" class="nav-link">Flagship Systems</a></li>
+          <li><a href="#standaloneApps" class="nav-link">Mobile Apps</a></li>
+          <li><a href="#architecture" class="nav-link">Architecture Invariants</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="mailto:contact@williamdanialarthur.me" class="nav-btn">Direct Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Executive Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span>●</span> FOUNDER &bull; PRINCIPAL ARCHITECT &bull; MOBILE &amp; FULL-STACK
+          </div>
+          <h1 class="hero-title">
+            Engineering local-first web suites, native Android apps, and high-density simulation engines.
+          </h1>
+          <p class="hero-lead">
+            I build deterministic, privacy-first software that runs client-side with zero cloud telemetry. Founder of <strong>Camelot Web Tools</strong>, architect of 8 production Android applications, and creator of deep-time genomics and AI-driven agricultural simulations.
+          </p>
+          <div class="hero-actions">
+            <a href="#flagshipProjects" class="btn-primary">Explore Flagship Systems &darr;</a>
+            <a href="https://camelotwebtools.com" target="_blank" rel="noopener" class="btn-secondary">Launch Camelot Web Tools &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Technical Spec Snapshot Card -->
+        <div class="hero-profile-card">
+          <div class="profile-card-header">
+            <div class="profile-avatar">W</div>
+            <div class="profile-meta">
+              <h3>William D. Arthur</h3>
+              <p>Austin, Texas &bull; Tech Founder</p>
+            </div>
+          </div>
+          <ul class="profile-spec-list">
+            <li class="profile-spec-item">
+              <span class="spec-label">Flagship Venture:</span>
+              <span class="spec-val">Camelot Web Tools</span>
+            </li>
+            <li class="profile-spec-item">
+              <span class="spec-label">Mobile Production:</span>
+              <span class="spec-val">8 Signed Android Apps</span>
+            </li>
+            <li class="profile-spec-item">
+              <span class="spec-label">Primary Stack:</span>
+              <span class="spec-val">React, TS, Kotlin, Compose</span>
+            </li>
+            <li class="profile-spec-item">
+              <span class="spec-label">Data Policy:</span>
+              <span class="spec-val">100% Client-Side Local</span>
+            </li>
+            <li class="profile-spec-item">
+              <span class="spec-label">Target SDK:</span>
+              <span class="spec-val">Android 15+ (API 36)</span>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- NAVIGATION PILL TABS -->
-    <nav class="nav-tab-strip">
-      <button class="nav-tab tab-home active" data-filter="all">🏠 All Projects</button>
-      <button class="nav-tab tab-games" data-filter="games">🎮 Mobile Games</button>
-      <button class="nav-tab tab-mobile" data-filter="mobile">📱 Mobile Apps</button>
-      <button class="nav-tab tab-code" data-filter="software">💻 Web &amp; Software</button>
-      <button class="nav-tab tab-music" data-filter="music">🎵 Music Releases</button>
-      <a href="#aboutSection" class="nav-tab tab-about">👤 About</a>
-      <a href="mailto:contact@williamdanialarthur.me" class="nav-tab tab-contact">✉️ Contact</a>
-    </nav>
-
-    <!-- MAIN 3-COLUMN PORTAL -->
-    <main class="portal-main">
-
-      <!-- LEFT COLUMN WIDGETS -->
-      <aside class="portal-left-col">
-        
-        <!-- Maker ID & Resume Widget -->
-        <div class="retro-widget">
-          <div class="widget-header header-profile">
-            <span>MAKER PROFILE</span>
-            <span>★</span>
+    <!-- High-Impact Live Metrics Section -->
+    <section class="metrics-section">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-num">79</div>
+            <div class="metric-label">Client-Side Utilities</div>
+            <div class="metric-detail">Active in Camelot Web Tools</div>
           </div>
-          <div class="widget-body profile-card" id="aboutSection">
-            <div class="profile-avatar-frame">
-              👨‍💻
-            </div>
-            <div class="profile-name">William D. Arthur</div>
-            <div class="profile-tagline">Software Dev &bull; Game Creator &bull; Music Producer</div>
-            <div class="profile-badge-row">
-              <span class="mini-badge">🌐 Camelot Web Tools</span>
-              <span class="mini-badge">🎮 Mobile Games</span>
-              <span class="mini-badge">🎵 Attention Perfection</span>
-            </div>
-            <a href="resume.pdf" class="download-resume-btn" target="_blank" download>
-              💾 DOWNLOAD RESUME.PDF
-            </a>
+          <div class="metric-card">
+            <div class="metric-num">8</div>
+            <div class="metric-label">Signed Android Bundles</div>
+            <div class="metric-detail">Production .AAB builds for Google Play</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num">300k+</div>
+            <div class="metric-label">Years of Genetic History</div>
+            <div class="metric-detail">4D WebGL dispersal models in ORIGO</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-num">0 ms</div>
+            <div class="metric-label">Cloud Network Latency</div>
+            <div class="metric-detail">Local execution, zero cookies, zero telemetry</div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Creative Disciplines Card -->
-        <div class="retro-widget">
-          <div class="widget-header header-specs">
-            <span>DISCIPLINES</span>
-            <span>📁</span>
-          </div>
-          <div class="widget-body">
-            <ul class="stats-list">
-              <li>
-                <span class="stat-key">🌐 Web &amp; Desktop:</span>
-                <span class="stat-val">Camelot Web Tools</span>
-              </li>
-              <li>
-                <span class="stat-key">🎮 Mobile Games:</span>
-                <span class="stat-val">Android, Kotlin, Compose</span>
-              </li>
-              <li>
-                <span class="stat-key">💻 Web Software:</span>
-                <span class="stat-val">React, TypeScript, AI APIs</span>
-              </li>
-              <li>
-                <span class="stat-key">🎵 Music Releases:</span>
-                <span class="stat-val">Attention Perfection, WAWFF</span>
-              </li>
-              <li>
-                <span class="stat-key">📜 Bio-Data Tech:</span>
-                <span class="stat-val">Genealogy Timeline</span>
-              </li>
-            </ul>
-          </div>
+    <!-- Flagship Systems & Project Archive -->
+    <section class="container" id="flagshipProjects" style="padding-top: 56px;">
+      
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web">Web Platforms</button>
+          <button class="filter-btn" data-filter="mobile">Mobile Apps (Android)</button>
+          <button class="filter-btn" data-filter="simulation">Game &amp; AI Simulation</button>
+          <button class="filter-btn" data-filter="bio">Bioinformatics</button>
         </div>
-
-        <!-- Direct Channels Hub -->
-        <div class="retro-widget">
-          <div class="widget-header header-bio">
-            <span>DIRECT CHANNELS</span>
-            <span>🔗</span>
-          </div>
-          <div class="widget-body">
-            <ul class="stats-list">
-              <li>
-                <span class="stat-key">Live Flagship:</span>
-                <a href="https://camelotwebtools.com" target="_blank" class="stat-val" style="color: #0088ff; font-weight: 800;">CamelotWebTools.com &gt;</a>
-              </li>
-              <li>
-                <span class="stat-key">GitHub:</span>
-                <a href="https://github.com" target="_blank" class="stat-val" style="color: #0088ff;">Repositories &gt;</a>
-              </li>
-              <li>
-                <span class="stat-key">SoundCloud:</span>
-                <a href="https://soundcloud.com" target="_blank" class="stat-val" style="color: #ff2a85;">Attention Perfection &gt;</a>
-              </li>
-              <li>
-                <span class="stat-key">LinkedIn:</span>
-                <a href="https://linkedin.com" target="_blank" class="stat-val" style="color: #0088ff;">Profile &gt;</a>
-              </li>
-            </ul>
-          </div>
+        <div class="section-tagline">
+          SPECIFICATIONS &bull; ARCHITECTURAL SCHEMAS &bull; REAL ASSETS
         </div>
+      </div>
 
-      </aside>
+      <!-- Flagship Projects Grid -->
+      <div class="flagship-grid">
 
-      <!-- CENTER COLUMN (THE MAIN EVENT) -->
-      <section class="portal-center-col" id="projectSection">
-
-        <!-- BIG FLAGSHIP HERO SHOWCASE: CAMELOT WEB TOOLS -->
-        <div class="hero-feature-box">
-          <div class="hero-feature-header">
-            <div class="feature-title">
-              <span>★</span> FLAGSHIP PRODUCT ON WDA.ME
-            </div>
-            <div class="feature-pill">LIVE COMMERCIAL SUITE</div>
+        <!-- PROJECT 1: CAMELOT WEB TOOLS (WEB & DESKTOP) -->
+        <article class="project-card" data-category="web">
+          <div class="project-media-col">
+            <img src="assets/images/cwt-desktop-real.png" alt="Camelot Web Tools Live Web Application Screenshot" loading="lazy" />
           </div>
-          <div class="hero-feature-body">
-            <div class="hero-media-wrapper" onclick="openProjectModal('cwt-flagship')" style="cursor: pointer;">
-              <img src="assets/images/cwt-home.png" alt="Camelot Web Tools Flagship" class="hero-media-img" />
-            </div>
-            <div class="hero-feature-content">
-              <h2>Camelot Web Tools</h2>
-              <p>
-                A privacy-focused multi-tool web and Windows desktop utility suite built for everyday business, developer, and creative workflows with zero data collection.
+          <div class="project-info-col">
+            <div>
+              <div class="project-badge-row">
+                <span class="badge badge-live">Live Commercial Suite</span>
+                <span class="badge badge-platform">Web &bull; Desktop NSIS</span>
+              </div>
+              <h2 class="project-title">Camelot Web Tools (CWT)</h2>
+              <p class="project-description">
+                Privacy-first, 100% client-side multi-tool productivity suite offering 79 professional financial calculators, developer encoders, vector PDF engines, and business document builders. Computes completely within browser Web Workers and Windows desktop runtimes with zero third-party data transmission.
               </p>
-              <div class="hero-tech-tags">
-                <span>React / Vite</span>
-                <span>Windows Electron</span>
-                <span>Node.js CLI</span>
-                <span>Client-Side Privacy</span>
-              </div>
-              <div class="hero-actions">
-                <a href="https://camelotwebtools.com" target="_blank" class="action-btn-primary">
-                  🚀 Launch Site (camelotwebtools.com) &gt;&gt;
-                </a>
-                <button class="action-btn-secondary" onclick="openProjectModal('cwt-flagship')">
-                  🔍 View Details
-                </button>
+              <ul class="project-highlights">
+                <li>Integer-cent arithmetic eliminating IEEE-754 floating-point errors.</li>
+                <li>In-memory Bates stamping with millisecond collision prevention.</li>
+                <li>Deterministic SHA-256 client-side cryptographic hashing envelopes.</li>
+                <li>MCP Server package (`camelotwebtools-mcp`) providing 79 tools to AI models.</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tech-tag">React 18</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Electron</span>
+                <span class="tech-tag">pdf-lib</span>
+                <span class="tech-tag">IndexedDB</span>
               </div>
             </div>
+            <div class="project-actions">
+              <a href="cwt.html" class="action-link-primary">Technical Deep Dive &rarr;</a>
+              <a href="https://camelotwebtools.com" target="_blank" rel="noopener" class="action-link-secondary">Launch Live Portal &rarr;</a>
+            </div>
           </div>
+        </article>
+
+        <!-- PROJECT 2: CWT MOBILE APP -->
+        <article class="project-card featured-reverse" data-category="mobile">
+          <div class="project-media-col phone-preview-layout">
+            <div class="phone-mock-frame">
+              <img src="assets/images/cwt-mobile-hub.png" alt="CWT Mobile Hub Android Screen" loading="lazy" />
+            </div>
+            <div class="phone-mock-frame">
+              <img src="assets/images/cwt-mobile-finance.png" alt="CWT Mobile Financial Suite Android Screen" loading="lazy" />
+            </div>
+          </div>
+          <div class="project-info-col">
+            <div>
+              <div class="project-badge-row">
+                <span class="badge badge-live">Production Android Bundle</span>
+                <span class="badge badge-platform">Android SDK 34+ / API 36</span>
+              </div>
+              <h2 class="project-title">Camelot Web Tools: Mobile App</h2>
+              <p class="project-description">
+                Offline-first Android application pairing native Kotlin and Jetpack Compose with virtualized local asset streaming via AndroidX `WebViewAssetLoader`. Ships 75+ productivity and financial utilities to mobile hardware with zero cloud dependencies and Scoped Storage file sandboxing.
+              </p>
+              <ul class="project-highlights">
+                <li>Zero-cloud architecture: executes entire tool catalog offline with no server ping.</li>
+                <li>`WebViewAssetLoader` virtual origin bypassing CORS and file-scheme restrictions.</li>
+                <li>Android `MediaStore` Scoped Storage integration for instantaneous PDF exports.</li>
+                <li>Compiled and signed with official release keystore ready for Google Play.</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tech-tag">Android</span>
+                <span class="tech-tag">Kotlin 2.x</span>
+                <span class="tech-tag">Jetpack Compose</span>
+                <span class="tech-tag">Material3</span>
+                <span class="tech-tag">WebViewAssetLoader</span>
+                <span class="tech-tag">Signed .AAB</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="cwt-mobile.html" class="action-link-primary">Mobile Architecture Deep Dive &rarr;</a>
+              <a href="cwt-standalone-apps.html" class="action-link-secondary">View 7 Standalone Apps &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: THE CATTLE TYCOON GAME -->
+        <article class="project-card" data-category="simulation">
+          <div class="project-media-col">
+            <img src="assets/images/cattle-tycoon-real.png" alt="The Cattle Game Livestock Simulation Screenshot" loading="lazy" />
+          </div>
+          <div class="project-info-col">
+            <div>
+              <div class="project-badge-row">
+                <span class="badge badge-live">Active Production Prototype</span>
+                <span class="badge badge-platform">Game Systems &bull; AI Orchestration</span>
+              </div>
+              <h2 class="project-title">The Cattle Tycoon Game</h2>
+              <p class="project-description">
+                Strategic agricultural ranching and livestock genetics simulation combining commodity market trading, multi-species pedigree breeding, competitive halter judging, and Google Gemini AI narrative generation (`@google/genai`). Players manage a 10-year career (40 seasons) across five distinct geographic regions.
+              </p>
+              <ul class="project-highlights">
+                <li>Multi-species genetics engine breeding 4 species across 5 rarity tiers.</li>
+                <li>Seasonal commodity ticker simulating peak beef and pork demand cycles.</li>
+                <li>Gemini 2.4.0 integration generating contextual judge evaluations and auctioneer banter.</li>
+                <li>Synthesized Web Audio sound engine generating procedural ranch audio with zero external MP3s.</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tech-tag">React 19</span>
+                <span class="tech-tag">TypeScript 7</span>
+                <span class="tech-tag">Tailwind CSS v4</span>
+                <span class="tech-tag">Motion 12</span>
+                <span class="tech-tag">@google/genai</span>
+                <span class="tech-tag">Web Audio API</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="cattle-tycoon.html" class="action-link-primary">Simulation Specs &rarr;</a>
+              <a href="https://ai.studio/apps/f34d9689-c2cc-42dc-b42c-600ed9680d95" target="_blank" rel="noopener" class="action-link-secondary">AI Studio App &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 4: ORIGO BIOINFORMATICS ATLAS -->
+        <article class="project-card featured-reverse" data-category="bio">
+          <div class="project-media-col">
+            <img src="assets/images/origo-real.png" alt="ORIGO 4D WebGL Population Dispersal Atlas Screenshot" loading="lazy" />
+          </div>
+          <div class="project-info-col">
+            <div>
+              <div class="project-badge-row">
+                <span class="badge badge-live">Production Prototype</span>
+                <span class="badge badge-platform">Bioinformatics &bull; 4D WebGL</span>
+              </div>
+              <h2 class="project-title">ORIGO: Deep-Time Ancestral Atlas</h2>
+              <p class="project-description">
+                In-browser bioinformatics platform and 4D geospatial atlas tracking 300,000 years of human evolutionary dispersal. Ingests raw consumer genomic variant arrays (23andMe, AncestryDNA, gVCF) directly in client memory to construct interactive phylogenetic trajectories grounded in peer-reviewed archaeogenetic literature.
+              </p>
+              <ul class="project-highlights">
+                <li>Universal client-side genomic parser decompressing `.vcf.gz` using in-memory `pako`.</li>
+                <li>Phylogenetic resolver mapping paternal Y-DNA and maternal mtDNA branches to archaeological cultures.</li>
+                <li>Interactive 4D Three.js WebGL globe with dynamic temporal scrubbing from 300,000 BCE to 1900 CE.</li>
+                <li>Evidence Workbench correlating genetic claims with published DOI citations and radiocarbon-dated fossils.</li>
+              </ul>
+              <div class="tech-tags">
+                <span class="tech-tag">React 19</span>
+                <span class="tech-tag">Three.js</span>
+                <span class="tech-tag">React Three Fiber</span>
+                <span class="tech-tag">XState v5</span>
+                <span class="tech-tag">Leaflet</span>
+                <span class="tech-tag">D3-Scale</span>
+                <span class="tech-tag">pako</span>
+              </div>
+            </div>
+            <div class="project-actions">
+              <a href="origo.html" class="action-link-primary">Bioinformatics Deep Dive &rarr;</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CWT Standalone Android Mobile Suite -->
+    <section class="compact-section" id="standaloneApps">
+      <div class="container">
+        <div class="section-header-block">
+          <h2>CWT Standalone Mobile Applications</h2>
+          <p>
+            Specialized single-purpose Android utilities spun out of the Camelot ecosystem. Each application features an isolated native Android wrapper, signed release bundle (`.aab`), verified Play Store graphical assets, and zero cloud dependencies.
+          </p>
         </div>
 
-        <!-- Filter Pills Bar -->
-        <div class="section-banner-header">
-          <span>PROJECT ARCHIVE</span>
-          <div class="filter-pills">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="games">🎮 Mobile Games</button>
-            <button class="filter-btn" data-filter="mobile">📱 Mobile Apps</button>
-            <button class="filter-btn" data-filter="software">💻 Web Software</button>
-            <button class="filter-btn" data-filter="music">🎵 Music Releases</button>
-          </div>
-        </div>
+        <div class="standalones-grid">
 
-        <!-- SECTION 1: FINISHED & LIVE PROJECTS -->
-        <div class="section-label-banner">
-          <span>★ FINISHED &amp; LIVE RELEASES</span>
-          <span style="font-size: 0.75rem; color: #fff; opacity: 0.9;">READY TO EXPLORE</span>
-        </div>
-        <div class="project-strip-container" id="finishedList">
-          <!-- Camelot Web Tools -->
-          <div class="project-strip strip-cwt" data-id="cwt-flagship">
-            <div class="strip-bar-header">
-              <span>Web &amp; Windows Suite</span>
-              <span class="strip-tag">LIVE WEB &amp; DESKTOP</span>
+          <!-- Standalone 1: Debt Payoff -->
+          <article class="standalone-card" data-category="mobile">
+            <div class="standalone-thumb-box">
+              <img src="assets/images/cwt-standalone-debt.png" alt="Debt Payoff Calculator Android Screen" loading="lazy" />
             </div>
-            <div class="strip-content">
-              <div class="strip-thumbnail-box" onclick="openProjectModal('cwt-flagship')" title="Click to view details">
-                <img src="assets/images/cwt-home.png" alt="Camelot Web Tools" loading="lazy" />
-              </div>
-              <div class="strip-details">
-                <h3>Camelot Web Tools</h3>
-                <p>Privacy-focused multi-tool utility suite built for everyday business, developer, and creative workflows with zero data collection.</p>
-                <div class="strip-meta">
-                  <span>React / Vite</span>
-                  <span>Electron</span>
-                  <span>Node.js CLI</span>
-                  <span>Privacy First</span>
-                  <span>TypeScript</span>
-                </div>
-              </div>
-              <a href="https://camelotwebtools.com" target="_blank" class="go-btn">
-                Visit Site! &gt;&gt;
-              </a>
-            </div>
-          </div>
-
-          <!-- Attention Perfection: 90's Me -->
-          <div class="project-strip strip-music" data-id="ap-90s-me">
-            <div class="strip-bar-header">
-              <span>Music Release</span>
-              <span class="strip-tag">MUSIC RELEASE</span>
-            </div>
-            <div class="strip-content">
-              <div class="strip-thumbnail-box" onclick="openProjectModal('ap-90s-me')" title="Click to view details">
-                <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80" alt="Attention Perfection 90s Me" loading="lazy" />
-              </div>
-              <div class="strip-details">
-                <h3>Attention Perfection — &quot;90's Me&quot;</h3>
-                <p>Final polished pop-punk / alternative rock release under Attention Perfection featuring driving guitar riffs, anthemic hooks, and analog mixing.</p>
-                <div class="strip-meta">
-                  <span>Attention Perfection</span>
-                  <span>Pop Punk</span>
-                  <span>Studio Production</span>
-                  <span>Mastered Audio</span>
-                </div>
-                <div class="audio-player-strip">
-                  <button class="play-toggle-btn" onclick="toggleAudio(this, 'assets/audio/attention_perfection_90s_me.mp3')" title="Play 90's Me">▶</button>
-                  <div class="mini-equalizer">
-                    <div class="eq-bar"></div>
-                    <div class="eq-bar"></div>
-                    <div class="eq-bar"></div>
-                    <div class="eq-bar"></div>
-                    <div class="eq-bar"></div>
-                  </div>
-                  <span style="font-size: 0.7rem; color: #ffea00; font-family: var(--font-mono); font-weight: bold;">
-                    ATTENTION PERFECTION: 90'S ME (CLICK PLAY)
-                  </span>
-                </div>
-              </div>
-              <button class="go-btn" onclick="openProjectModal('ap-90s-me')">
-                Play Release! &gt;&gt;
-              </button>
-            </div>
-          </div>
-
-          <!-- We All Want Famous Friends (WAWFF) -->
-          <div class="project-strip strip-music" data-id="wawff-album">
-            <div class="strip-bar-header">
-              <span>Music Release</span>
-              <span class="strip-tag">ALBUM &amp; VIDEOS</span>
-            </div>
-            <div class="strip-content">
-              <div class="strip-thumbnail-box" onclick="openProjectModal('wawff-album')" title="Click to view details">
-                <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=600&q=80" alt="WAWFF Album" loading="lazy" />
-              </div>
-              <div class="strip-details">
-                <h3>&quot;We All Want Famous Friends&quot; (WAWFF)</h3>
-                <p>Full 12-track released songwriting album and companion music video series, featuring tracks like 'By You', 'Global Warming', 'Home', and 'Mexican Girl'.</p>
-                <div class="strip-meta">
-                  <span>Songwriting</span>
-                  <span>12 Tracks</span>
-                  <span>Music Videos</span>
-                  <span>Acoustic / Indie</span>
-                </div>
-              </div>
-              <button class="go-btn" onclick="openProjectModal('wawff-album')">
-                Explore Album! &gt;&gt;
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- SECTION 2: IN DEVELOPMENT & UPCOMING -->
-        <div id="inDevSection">
-          <div class="section-label-banner" style="background: #2a1f0a; color: #ffaa00; margin-top: 20px;">
-            <span>★ IN DEVELOPMENT &amp; UPCOMING</span>
-            <span style="font-size: 0.75rem; color: #ffaa00; opacity: 0.9;">ACTIVE ROADMAP</span>
-          </div>
-          <div class="project-strip-container" id="devList">
-            <!-- Invasion Defense -->
-            <div class="project-strip strip-games" data-id="invasion-defense">
-              <div class="strip-bar-header">
-                <span>Mobile Game</span>
-                <span class="strip-tag">IN DEVELOPMENT</span>
-              </div>
-              <div class="strip-content">
-                <div class="strip-thumbnail-box" onclick="openProjectModal('invasion-defense')" title="Click to view details">
-                  <img src="assets/images/invasion-defense.jpg" alt="Invasion Defense" loading="lazy" />
-                </div>
-                <div class="strip-details">
-                  <h3>Invasion Defense: Global Disclosure Engine</h3>
-                  <p>Deep tactical grand strategy mobile game in active development. Features 200+ mutation nodes across 5 alien factions, 3D rotating globe projection, and radar air combat.</p>
-                  <div class="strip-meta">
-                    <span>Android</span>
-                    <span>Kotlin</span>
-                    <span>Jetpack Compose</span>
-                    <span>3D Projection</span>
-                    <span>Game Design</span>
-                  </div>
-                </div>
-                <button class="go-btn" onclick="openProjectModal('invasion-defense')">
-                  Game Specs! &gt;&gt;
-                </button>
-              </div>
-            </div>
-
-            <!-- AI Credit Report Auditor -->
-            <div class="project-strip strip-dev" data-id="credit-auditor">
-              <div class="strip-bar-header">
-                <span>Web Software</span>
-                <span class="strip-tag">IN DEVELOPMENT</span>
-              </div>
-              <div class="strip-content">
-                <div class="strip-thumbnail-box" onclick="openProjectModal('credit-auditor')" title="Click to view details">
-                  <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=600&q=80" alt="Credit Auditor" loading="lazy" />
-                </div>
-                <div class="strip-details">
-                  <h3>AI Credit Report Auditor &amp; Dispute Generator</h3>
-                  <p>Intelligent web app in development powered by Gemini AI and PDF.js that parses Experian, TransUnion, and Equifax reports to detect reporting violations and auto-generate legal dispute letters.</p>
-                  <div class="strip-meta">
-                    <span>React</span>
-                    <span>TypeScript</span>
-                    <span>Google Gemini AI</span>
-                    <span>PDF.js</span>
-                    <span>Tailwind CSS</span>
-                  </div>
-                </div>
-                <button class="go-btn" onclick="openProjectModal('credit-auditor')">
-                  View Details! &gt;&gt;
-                </button>
-              </div>
-            </div>
-
-            <!-- Genealogy Timeline Builder -->
-            <div class="project-strip strip-dev" data-id="genealogy-builder">
-              <div class="strip-bar-header">
-                <span>Web &amp; Bio-Data</span>
-                <span class="strip-tag">IN DEVELOPMENT</span>
-              </div>
-              <div class="strip-content">
-                <div class="strip-thumbnail-box" onclick="openProjectModal('genealogy-builder')" title="Click to view details">
-                  <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80" alt="Genealogy Timeline" loading="lazy" />
-                </div>
-                <div class="strip-details">
-                  <h3>Genealogy Timeline Builder</h3>
-                  <p>Interactive visual timeline and ancestral mapping platform that translates DNA migration narratives and historical family records into dynamic storytelling journeys.</p>
-                  <div class="strip-meta">
-                    <span>Bioinformatics</span>
-                    <span>Data Visualization</span>
-                    <span>Ancestry DNA</span>
-                    <span>Interactive Timelines</span>
-                  </div>
-                </div>
-                <button class="go-btn" onclick="openProjectModal('genealogy-builder')">
-                  View Roadmap! &gt;&gt;
-                </button>
-              </div>
-            </div>
-
-            <!-- Camelot Web Tools: Android App -->
-            <div class="project-strip strip-dev" data-id="cwt-android">
-              <div class="strip-bar-header">
-                <span>Mobile App</span>
-                <span class="strip-tag">IN DEVELOPMENT</span>
-              </div>
-              <div class="strip-content">
-                <div class="strip-thumbnail-box" onclick="openProjectModal('cwt-android')" title="Click to view details">
-                  <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=600&q=80" alt="CWT Android App" loading="lazy" />
-                </div>
-                <div class="strip-details">
-                  <h3>Camelot Web Tools: Android App</h3>
-                  <p>Official mobile companion bringing privacy-preserving utility suites, quick conversion tools, and client-side encryption directly to Android devices.</p>
-                  <div class="strip-meta">
-                    <span>Android</span>
-                    <span>Kotlin / Compose</span>
-                    <span>Offline Utilities</span>
-                    <span>Mobile Suite</span>
-                  </div>
-                </div>
-                <button class="go-btn" onclick="openProjectModal('cwt-android')">
-                  View Specs! &gt;&gt;
-                </button>
-              </div>
-            </div>
-
-            <!-- Camelot Health & Fitness -->
-            <div class="project-strip strip-dev" data-id="camelot-fitness">
-              <div class="strip-bar-header">
-                <span>Web &amp; Mobile</span>
-                <span class="strip-tag">IN DEVELOPMENT</span>
-              </div>
-              <div class="strip-content">
-                <div class="strip-thumbnail-box" onclick="openProjectModal('camelot-fitness')" title="Click to view details">
-                  <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Camelot Fitness" loading="lazy" />
-                </div>
-                <div class="strip-details">
-                  <h3>Camelot Health &amp; Fitness</h3>
-                  <p>Comprehensive health, workout tracking, and nutritional intelligence ecosystem spanning a modern web portal and companion mobile application.</p>
-                  <div class="strip-meta">
-                    <span>Health Tech</span>
-                    <span>Cross-Platform</span>
-                    <span>Performance Tracking</span>
-                    <span>Full Stack</span>
-                  </div>
-                </div>
-                <button class="go-btn" onclick="openProjectModal('camelot-fitness')">
-                  View Blueprint! &gt;&gt;
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </section>
-
-      <!-- RIGHT COLUMN (SPOTLIGHT & ABOUT) -->
-      <aside class="portal-right-col">
-        
-        <!-- Retro Skyscraper Tower Ad: Invasion Defense -->
-        <div class="retro-ad-tower">
-          <div class="ad-label-bar">MOBILE GAME SPOTLIGHT</div>
-          <div class="ad-hero-content">
-            <span class="ad-badge" style="background: var(--portal-orange); color: #fff;">IN DEV: MOBILE GAME</span>
-            <div class="ad-image-box">
-              <img src="assets/images/invasion-defense.jpg" alt="Invasion Defense Game" />
-            </div>
-            <div class="ad-title">Invasion Defense</div>
-            <div class="ad-desc">
-              Tactical disclosure engine with 200+ mutations, 3D rotating globe, radar dogfights, and deep lore.
-            </div>
-            <a href="javascript:void(0)" onclick="openProjectModal('invasion-defense')" class="ad-click-here">
-              VIEW DOSSIER &gt;
-            </a>
-          </div>
-        </div>
-
-        <!-- Creator Philosophy Card -->
-        <div class="retro-widget">
-          <div class="widget-header" style="background: var(--portal-cyan); color: #111;">
-            <span>ABOUT WILLIAM</span>
-            <span>💡</span>
-          </div>
-          <div class="widget-body" style="font-size: 0.8rem; color: #333; line-height: 1.5; font-weight: 600;">
-            <p style="margin-bottom: 8px;">
-              Creator of <strong>Camelot Web Tools</strong>, mobile games, and independent music.
+            <h3 class="standalone-title">Debt Payoff Calculator</h3>
+            <p class="standalone-desc">
+              Snowball and Avalanche repayment modeling engine with dynamic amortization curves, total interest calculations, and payoff schedule exports.
             </p>
-            <p>
-              Focused on privacy-first software architecture, rich interactive game engines, and full-spectrum music production under <strong>Attention Perfection</strong>.
+            <div class="standalone-specs">
+              <span>com.camelotwebtools.debtpayoff</span>
+              <span>15.32 MB .AAB</span>
+            </div>
+          </article>
+
+          <!-- Standalone 2: Quick Budget -->
+          <article class="standalone-card" data-category="mobile">
+            <div class="standalone-thumb-box">
+              <img src="assets/images/cwt-standalone-budget.png" alt="Quick Budget Android Screen" loading="lazy" />
+            </div>
+            <h3 class="standalone-title">Quick Budget</h3>
+            <p class="standalone-desc">
+              Zero-based budgeting utility with category allocations, variable expense pacing, and local storage persistence without linking bank credentials.
+            </p>
+            <div class="standalone-specs">
+              <span>com.camelotwebtools.quickbudget</span>
+              <span>15.32 MB .AAB</span>
+            </div>
+          </article>
+
+          <!-- Standalone 3: Invoice Generator Pro -->
+          <article class="standalone-card" data-category="mobile">
+            <div class="standalone-thumb-box">
+              <img src="assets/images/cwt-standalone-invoice.png" alt="Invoice Generator Pro Android Screen" loading="lazy" />
+            </div>
+            <h3 class="standalone-title">Invoice Generator Pro</h3>
+            <p class="standalone-desc">
+              Commercial invoice builder generating professional vector PDFs with tax adjustments, integer-cent totals, custom logos, and Bates page numbering.
+            </p>
+            <div class="standalone-specs">
+              <span>com.camelotwebtools.invoicepro</span>
+              <span>15.32 MB .AAB</span>
+            </div>
+          </article>
+
+          <!-- Standalone 4: Receipt Itemizer Pro -->
+          <article class="standalone-card" data-category="mobile">
+            <div class="standalone-thumb-box">
+              <img src="assets/images/cwt-standalone-receipt.png" alt="Receipt Itemizer Pro Android Screen" loading="lazy" />
+            </div>
+            <h3 class="standalone-title">Receipt Itemizer Pro</h3>
+            <p class="standalone-desc">
+              Expense categorization engine with multi-item splitting, tax breakdown calculations, and clean tabular CSV/PDF report generation.
+            </p>
+            <div class="standalone-specs">
+              <span>com.camelotwebtools.receiptitemizer</span>
+              <span>34.03 MB .AAB</span>
+            </div>
+          </article>
+
+          <!-- Standalone 5: Subscription Manager -->
+          <article class="standalone-card" data-category="mobile">
+            <div class="standalone-thumb-box">
+              <img src="assets/images/cwt-standalone-subscription.png" alt="Subscription Manager Android Screen" loading="lazy" />
+            </div>
+            <h3 class="standalone-title">Subscription Manager</h3>
+            <p class="standalone-desc">
+              Recurring payment audit tool calculating annual burn rates, renewal notification timelines, and monthly spending distributions.
+            </p>
+            <div class="standalone-specs">
+              <span>com.camelotwebtools.subscriptionmanager</span>
+              <span>15.39 MB .AAB</span>
+            </div>
+          </article>
+
+          <!-- Standalone 6: Time Track Analyzer -->
+          <article class="standalone-card" data-category="mobile">
+            <div class="standalone-thumb-box">
+              <img src="assets/images/cwt-standalone-timetrack.png" alt="Time Track Analyzer Android Screen" loading="lazy" />
+            </div>
+            <h3 class="standalone-title">Time Track Analyzer</h3>
+            <p class="standalone-desc">
+              Freelancer and contractor hour tracking utility calculating billable totals, project task breakdowns, and timesheet PDF summaries.
+            </p>
+            <div class="standalone-specs">
+              <span>com.camelotwebtools.timetracker</span>
+              <span>15.32 MB .AAB</span>
+            </div>
+          </article>
+
+        </div>
+
+        <div style="margin-top: 32px; text-align: center;">
+          <a href="cwt-standalone-apps.html" class="action-link-primary">
+            Explore All 7 Standalone Applications &amp; Release Bundles &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Principles & Anti-Slop Rigor -->
+    <section class="principles-section" id="architecture">
+      <div class="container">
+        <div class="section-header-block">
+          <h2>Core Architectural Principles</h2>
+          <p>
+            Foundational engineering rules enforced across every web utility, Android bundle, and simulation engine.
+          </p>
+        </div>
+
+        <div class="principles-grid">
+          <div class="principle-box">
+            <div class="principle-num">01 / SOVEREIGNTY</div>
+            <h3 class="principle-title">100% Client-Side Data Sovereignty</h3>
+            <p class="principle-text">
+              Zero cloud telemetry. User bank statements, confidential legal contracts, tax returns, and raw genomic arrays never leave the client device. Computations execute locally inside browser sandboxes, Web Workers, or Android Scoped Storage.
+            </p>
+          </div>
+
+          <div class="principle-box">
+            <div class="principle-num">02 / PRECISION</div>
+            <h3 class="principle-title">Mathematical &amp; Scientific Precision</h3>
+            <p class="principle-text">
+              All financial calculators manage currency balances strictly as integer cents to eliminate floating-point drift. Genomic mappings resolve against exact GRCh38 coordinates and ISOGG phylogenetic trees. Simulation economies live in isolated, testable balance matrices.
+            </p>
+          </div>
+
+          <div class="principle-box">
+            <div class="principle-num">03 / RESTRAINT</div>
+            <h3 class="principle-title">Tactile Restraint &amp; Anti-AI Slop</h3>
+            <p class="principle-text">
+              No generic purple gradients, no floating clay balls, and no synthetic marketing platitudes. Interfaces prioritize WCAG AAA contrast (19:1 on headings), high data density, snappy 150ms state changes, and verified commercial vector exports without watermarks.
             </p>
           </div>
         </div>
-
-      </aside>
-
-    </main>
-
-    <!-- BOTTOM SHELF: MY TECH & TOOL RIBBON (NICK SHOW BADGES STYLE) -->
-    <div class="bottom-shelf">
-      <div class="shelf-title">★ CORE SOFTWARE, ENGINE &amp; AUDIO TOOLCHAIN ★</div>
-      <div class="tools-ribbon">
-        <div class="tool-chip">🌐 Camelot Web Tools</div>
-        <div class="tool-chip">🎮 Android / Kotlin &amp; Compose</div>
-        <div class="tool-chip">💻 React &amp; Vite</div>
-        <div class="tool-chip">⚡ TypeScript / Node.js</div>
-        <div class="tool-chip">🖥️ Electron Desktop Apps</div>
-        <div class="tool-chip">🤖 Google Gemini API</div>
-        <div class="tool-chip">🎹 Ableton Live 12</div>
-        <div class="tool-chip">🎸 Studio One &amp; Analog Rig</div>
-        <div class="tool-chip">📜 Bioinformatics &amp; DNA Data</div>
-        <div class="tool-chip">🐙 Git &amp; GitHub Pages</div>
       </div>
-    </div>
+    </section>
 
-    <!-- RETRO FOOTER -->
-    <footer class="portal-footer">
-      <div>
-        &copy; 2002-2026 <strong>William Danial Arthur</strong>. All Rights Reserved. Hosted on GitHub Pages.
-      </div>
-      <div>
-        <a href="#aboutSection">About</a> | 
-        <a href="https://camelotwebtools.com" target="_blank">CamelotWebTools.com</a> | 
-        <a href="https://williamdanialarthur.me">williamdanialarthur.me</a> | 
-        <button class="back-to-top-btn" id="backToTopBtn">&Delta; Top</button>
-      </div>
-    </footer>
+    <!-- About Section -->
+    <section class="container" id="about" style="padding: 72px 0;">
+      <div class="hero-grid" style="align-items: start;">
+        <div>
+          <div class="hero-eyebrow">ABOUT THE ARCHITECT</div>
+          <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-primary); letter-spacing: -0.02em; margin-bottom: 20px;">
+            William Danial Arthur
+          </h2>
+          <p style="font-size: 1.0625rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 20px;">
+            I am a senior full-stack engineer, Android mobile developer, and independent technology business owner based in Austin, Texas. Over the past decade, my work has focused on engineering privacy-preserving consumer software, local-first web utilities, and complex interactive simulation systems.
+          </p>
+          <p style="font-size: 1.0625rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: 20px;">
+            As the founder and principal engineer of <strong>Camelot Web Tools</strong>, I spearheaded the complete product lifecycle from core TypeScript algorithms and vector PDF pipelines to native Android packaging and Google Play Console release deployment. My technical interests span deep-time population genetics, economic simulation balance curves, client-side cryptography, and zero-cloud software architecture.
+          </p>
+          <div style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px;">
+            <a href="mailto:contact@williamdanialarthur.me" class="btn-primary">contact@williamdanialarthur.me</a>
+            <a href="https://github.com" target="_blank" rel="noopener" class="btn-secondary">GitHub Profile &rarr;</a>
+          </div>
+        </div>
 
-  </div>
-
-  <!-- INTERACTIVE MODAL FOR SCREENSHOTS & PROJECT DETAILS -->
-  <div class="modal-backdrop" id="projectModal">
-    <div class="modal-window">
-      <div class="modal-header-bar">
-        <span id="modalTitle">Project Preview</span>
-        <button class="modal-close-btn" onclick="closeProjectModal()">✕</button>
+        <div class="hero-profile-card">
+          <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; border-bottom: 1px solid var(--border-light); padding-bottom: 10px;">
+            Core Technical Toolchain
+          </h3>
+          <ul class="profile-spec-list">
+            <li class="profile-spec-item">
+              <span class="spec-label">Web Ecosystem:</span>
+              <span class="spec-val">React 18/19, TypeScript</span>
+            </li>
+            <li class="profile-spec-item">
+              <span class="spec-label">Mobile Development:</span>
+              <span class="spec-val">Android, Kotlin, Compose</span>
+            </li>
+            <li class="profile-spec-item">
+              <span class="spec-label">Styling &amp; Motion:</span>
+              <span class="spec-val">Tailwind v4, Motion 12</span>
+            </li>
+            <li class="profile-spec-item">
+              <span class="spec-label">Desktop Runtimes:</span>
+              <span class="spec-val">Electron, Node.js CLI</span>
+            </li>
+            <li class="profile-spec-item">
+              <span class="spec-label">Graphics &amp; Geospatial:</span>
+              <span class="spec-val">Three.js, WebGL, Leaflet</span>
+            </li>
+            <li class="profile-spec-item">
+              <span class="spec-label">AI Integration:</span>
+              <span class="spec-val">Google Gemini, @google/genai</span>
+            </li>
+            <li class="profile-spec-item">
+              <span class="spec-label">Document Engines:</span>
+              <span class="spec-val">pdf-lib, Bates Stamping</span>
+            </li>
+            <li class="profile-spec-item">
+              <span class="spec-label">Protocol Tooling:</span>
+              <span class="spec-val">Model Context Protocol (MCP)</span>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="modal-body">
-        <img src="" alt="Project Preview" id="modalImg" class="modal-preview-img" />
-        <p class="modal-desc" id="modalDesc"></p>
-        <div class="hero-tech-tags" id="modalTags"></div>
-        <div class="modal-actions">
-          <a href="#" target="_blank" id="modalLiveBtn" class="action-btn-primary">Live Action</a>
-          <a href="#" target="_blank" id="modalCodeBtn" class="action-btn-secondary">Source Code</a>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>William Danial Arthur</h4>
+          <p>
+            Senior Full-Stack Engineer, Mobile Application Developer, and Founder of Camelot Web Tools. Focused on local-first data sovereignty and deterministic software architecture.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Flagship Systems</h5>
+          <ul class="footer-links">
+            <li><a href="cwt.html">Camelot Web Tools (Web)</a></li>
+            <li><a href="cwt-mobile.html">CWT Mobile App (Android)</a></li>
+            <li><a href="cwt-standalone-apps.html">Standalone Mobile Apps</a></li>
+            <li><a href="cattle-tycoon.html">The Cattle Tycoon Game</a></li>
+            <li><a href="origo.html">ORIGO Migration Atlas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Direct Channels</h5>
+          <ul class="footer-links">
+            <li><a href="https://camelotwebtools.com" target="_blank" rel="noopener">CamelotWebTools.com</a></li>
+            <li><a href="https://ai.studio/apps/f34d9689-c2cc-42dc-b42c-600ed9680d95" target="_blank" rel="noopener">AI Studio Cattle Game</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener">GitHub Repositories</a></li>
+            <li><a href="mailto:contact@williamdanialarthur.me">Email Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 William Danial Arthur. All rights reserved. Zero tracking cookies.
+        </div>
+        <div style="font-family: var(--font-mono);">
+          williamdanialarthur.me &bull; Austin, Texas
         </div>
       </div>
     </div>
-  </div>
+  </footer>
 
-  <!-- Interactive Logic -->
   <script src="script.js"></script>
 </body>
 </html>

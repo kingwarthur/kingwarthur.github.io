@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ORIGO | Deep-Time Ancestral Chronicle &amp; 4D WebGL Migration Atlas</title>
+  <meta name="description" content="Technical deep dive into ORIGO — In-browser bioinformatics and 4D geospatial atlas tracking 300,000 years of human evolutionary dispersal from consumer genomic data." />
+  
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="assets/images/cwt-app-icon.png">
+</head>
+<body>
+
+  <!-- Top Executive Status Bar -->
+  <aside class="exec-announcement-bar">
+    <div class="container announcement-inner">
+      <div class="announcement-item">
+        <span class="announcement-dot"></span>
+        <span>BIOINFORMATICS &amp; 4D GEOSPATIAL ATLAS &bull; ORIGO</span>
+      </div>
+      <div class="announcement-item">
+        <span>300,000 YEARS OF HUMAN EVOLUTIONARY DISPERSAL IN CLIENT-SIDE WEBGL</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Sticky Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-group">
+        <div class="brand-badge">WDA</div>
+        <div class="brand-text">
+          <span class="brand-name">William Danial Arthur</span>
+          <span class="brand-sub">Software Architect &bull; Tech Founder &bull; Mobile Dev</span>
+        </div>
+      </a>
+
+      <nav>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">&#9776;</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html#flagshipProjects" class="nav-link">Flagship Systems</a></li>
+          <li><a href="index.html#standaloneApps" class="nav-link">Mobile Apps</a></li>
+          <li><a href="index.html#architecture" class="nav-link">Architecture</a></li>
+          <li><a href="index.html#about" class="nav-link">About</a></li>
+          <li><a href="mailto:contact@williamdanialarthur.me" class="nav-btn">Direct Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Project Hero -->
+    <section class="detail-hero">
+      <div class="container">
+        <a href="index.html" class="back-link">&larr; Back to Portfolio Overview</a>
+        <div class="detail-title-group">
+          <div>
+            <div class="project-badge-row">
+              <span class="badge badge-live">Production Prototype</span>
+              <span class="badge badge-platform">Bioinformatics &bull; 4D WebGL &bull; Three.js</span>
+            </div>
+            <h1 class="detail-main-title">ORIGO: Deep-Time Ancestral Atlas</h1>
+            <p class="detail-subtitle">
+              An in-browser bioinformatics engine and 4D geospatial atlas that transforms raw consumer genomic variant files into an interactive chronicle tracking 300,000 years of human evolutionary dispersal.
+            </p>
+          </div>
+          <div>
+            <a href="index.html#flagshipProjects" class="btn-secondary">
+              &larr; Flagship Overview
+            </a>
+          </div>
+        </div>
+
+        <div class="tech-tags">
+          <span class="tech-tag">React 19</span>
+          <span class="tech-tag">TypeScript 7</span>
+          <span class="tech-tag">Three.js</span>
+          <span class="tech-tag">React Three Fiber</span>
+          <span class="tech-tag">XState v5</span>
+          <span class="tech-tag">Leaflet 1.9</span>
+          <span class="tech-tag">D3-Scale</span>
+          <span class="tech-tag">pako (gzip)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content & Bioinformatics Breakdown -->
+    <section class="detail-body-section">
+      <div class="container detail-layout-grid">
+        
+        <!-- Left Main Column -->
+        <div class="detail-main-column">
+          
+          <!-- Real Application Screenshot Showcase -->
+          <div class="detail-screenshot-showcase">
+            <img src="assets/images/origo-real.png" alt="ORIGO 4D WebGL Dispersal Atlas Screenshot" />
+          </div>
+
+          <!-- Section 1: Executive Overview -->
+          <div class="detail-content-block">
+            <h2>Scientific Vision &amp; In-Browser Genomics</h2>
+            <p>
+              Traditional commercial genetic genealogy presents ancestry as static, flat pie charts and isolated regional percentages (e.g., "42% Northwestern European"). <strong>ORIGO</strong> transforms raw consumer genomic data into a four-dimensional journey across 300,000 years of evolutionary history, charting ancestral survival corridors from archaic speciation in Africa through the Last Glacial Maximum and Neolithic agricultural expansions into the modern era.
+            </p>
+            <p>
+              Genomic variant arrays contain intensely sensitive, unchangeable health and identity data. ORIGO is architected so that raw files are decompressed, parsed, and queried completely inside browser memory using <code>pako</code> and typed arrays. No genomic data is ever uploaded to a remote server.
+            </p>
+          </div>
+
+          <!-- Section 2: Core Engineering Subsystems -->
+          <div class="detail-content-block">
+            <h2>Core Subsystems &amp; Scientific Pipeline</h2>
+            
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-primary); margin: 20px 0 8px 0;">
+              1. Universal Genomic Parser (`universalParser.ts`)
+            </h3>
+            <p>
+              Detects, decompresses, and normalizes disparate raw DNA formats directly in client RAM:
+            </p>
+            <ul class="project-highlights" style="margin-top: 10px;">
+              <li><strong>23andMe:</strong> Build 37 and Build 38 tab-delimited formats.</li>
+              <li><strong>AncestryDNA:</strong> Commented TSV/CSV format with multi-allele parsing.</li>
+              <li><strong>Standardized VCF / gVCF:</strong> In-memory gzip decompression via <code>pako</code>.</li>
+              <li><strong>Normalization Pipeline:</strong> Extracts <code>rsID</code>, <code>chromosome</code>, <code>position</code>, and <code>genotype</code> into indexed typed arrays for instant O(1) hash lookups.</li>
+            </ul>
+
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-primary); margin: 20px 0 8px 0;">
+              2. Phylogenetic &amp; Admixture Engine
+            </h3>
+            <p>
+              Resolves paternal Y-DNA haplogroups (A00 down through R1b-M269, I1-M253, E1b1b, J2, and Q-M242) and maternal mtDNA (L0 through H, U, K, J, T, and Indigenous American clades). Incorporates an <strong>Archaic Introgression Resolver</strong> that screens against ancient Vindija Neanderthal and Altai Denisovan genomes to compute inherited archaic traits (such as high-altitude EPAS1 mutations).
+            </p>
+
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-primary); margin: 20px 0 8px 0;">
+              3. Interactive 4D WebGL Migration Globe
+            </h3>
+            <p>
+              Powered by <strong>Three.js</strong> and <strong>React Three Fiber</strong>, the 3D globe renders geological ice sheet overlays, continental shelf exposures during glacial maximums, and dynamic geodesic migration arcs. Players scrub through 4D time slices from 300,000 BCE to 1900 CE.
+            </p>
+
+            <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-primary); margin: 20px 0 8px 0;">
+              4. Evidence Workbench &amp; Archaeological Benchmarking
+            </h3>
+            <p>
+              Every historical migration vector is grounded in peer-reviewed archaeogenetics. The Evidence Workbench links genetic mutations directly to radiocarbon-dated excavation sites and landmark papers published in <em>Nature</em>, <em>Science</em>, and <em>Cell</em> via persistent DOI links.
+            </p>
+          </div>
+
+          <!-- Section 3: Technical Specifications Table -->
+          <div class="detail-content-block">
+            <h2>Bioinformatics &amp; Graphics Stack</h2>
+            <table class="spec-table">
+              <thead>
+                <tr>
+                  <th>Component</th>
+                  <th>Technology</th>
+                  <th>Role in Engine</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Frontend Core</td>
+                  <td class="code-cell">React 19, TypeScript 7, Vite 8</td>
+                  <td>Strict type definitions across genomic coordinate datasets</td>
+                </tr>
+                <tr>
+                  <td>3D Geospatial Engine</td>
+                  <td class="code-cell">Three.js 0.185+, React Three Fiber, Drei</td>
+                  <td>60 FPS WebGL planetary shader rendering &amp; time scrubbing</td>
+                </tr>
+                <tr>
+                  <td>State Management</td>
+                  <td class="code-cell">XState v5 (xstate 5.32+)</td>
+                  <td>Finite state machine governing parsing and temporal playback</td>
+                </tr>
+                <tr>
+                  <td>Decompression Engine</td>
+                  <td class="code-cell">pako (in-browser gzip)</td>
+                  <td>Streams compressed .vcf.gz into memory without disk writes</td>
+                </tr>
+                <tr>
+                  <td>2D Cartography &amp; Scales</td>
+                  <td class="code-cell">Leaflet 1.9, D3-Scale</td>
+                  <td>Linear and logarithmic timeline interpolation</td>
+                </tr>
+                <tr>
+                  <td>Genomic Alignment</td>
+                  <td class="code-cell">GRCh37 / GRCh38 ISOGG Tables</td>
+                  <td>Standardized SNP coordinate mapping against reference assemblies</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+        <!-- Right Sidebar Info Column -->
+        <aside class="detail-sidebar">
+          
+          <div class="sidebar-widget">
+            <h3>Bioinformatics Specs</h3>
+            <ul class="sidebar-stat-list">
+              <li>
+                <span class="stat-k">Time Span:</span>
+                <span class="stat-v">300,000 BCE &ndash; Present</span>
+              </li>
+              <li>
+                <span class="stat-k">Parser Privacy:</span>
+                <span class="stat-v" style="color: #065f46;">100% Client-Side RAM</span>
+              </li>
+              <li>
+                <span class="stat-k">Supported Formats:</span>
+                <span class="stat-v">23andMe, Ancestry, gVCF</span>
+              </li>
+              <li>
+                <span class="stat-k">Rendering Engine:</span>
+                <span class="stat-v">Three.js WebGL (60 FPS)</span>
+              </li>
+              <li>
+                <span class="stat-k">Evidence Grounding:</span>
+                <span class="stat-v">DOI-Linked Archaeogenetics</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Core Engineering Invariants</h3>
+            <ul class="sidebar-stat-list">
+              <li>
+                <span class="stat-k">Cloud Uploads:</span>
+                <span class="stat-v">Strictly 0 bytes</span>
+              </li>
+              <li>
+                <span class="stat-k">Phylogenetic Standards:</span>
+                <span class="stat-v">ISOGG Conventions</span>
+              </li>
+              <li>
+                <span class="stat-k">Reference Genome:</span>
+                <span class="stat-v">GRCh38 / hg38</span>
+              </li>
+              <li>
+                <span class="stat-k">Admixture Models:</span>
+                <span class="stat-v">WHG, EEF, Steppe Pastoralist</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="sidebar-widget">
+            <h3>Related Flagship Systems</h3>
+            <ul class="sidebar-stat-list">
+              <li>
+                <a href="cwt.html" style="font-weight: 600;">Camelot Web Tools (Web) &rarr;</a>
+              </li>
+              <li>
+                <a href="cwt-mobile.html" style="font-weight: 600;">CWT Mobile App (Android) &rarr;</a>
+              </li>
+              <li>
+                <a href="cattle-tycoon.html" style="font-weight: 600;">The Cattle Tycoon Game &rarr;</a>
+              </li>
+            </ul>
+          </div>
+
+        </aside>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-bottom">
+      <div>
+        &copy; 2026 William Danial Arthur. All rights reserved.
+      </div>
+      <div>
+        <a href="index.html" style="color: #94a3b8;">&larr; Return to Home Portfolio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
