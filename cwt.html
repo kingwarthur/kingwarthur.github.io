@@ -9,43 +9,29 @@
   <title>Camelot Web Tools | Technical Architecture &amp; Case Study</title>
   <meta name="description" content="Technical deep dive into Camelot Web Tools — 100% client-side, local-first utility suite featuring 79 professional tools, vector PDF generation, and integer-cent precision." />
   
-  <link rel="stylesheet" href="style.css?v=2.2" />
+  <link rel="stylesheet" href="style.css?v=4.0" />
   <link rel="icon" type="image/png" href="assets/images/cwt-app-icon.png">
 </head>
 <body>
 
-  <!-- Top Executive HUD Bar -->
-  <aside class="exec-hud-bar">
-    <div class="container hud-inner">
-      <div class="hud-coords">
-        <span class="status-beacon"></span>
-        <span>FLAGSHIP PRODUCT DOSSIER // CAMELOT WEB TOOLS // OKLAHOMA CITY HQ</span>
-      </div>
-      <div>
-        <a href="https://camelotwebtools.com" target="_blank" rel="noopener" style="color: var(--accent-gold);">LIVE AT CAMELOTWEBTOOLS.COM &rarr;</a>
-      </div>
-    </div>
-  </aside>
-
-  <!-- Straight-Edge Site Navigation -->
+  <!-- Site Navigation -->
   <header class="site-header">
     <div class="container nav-container">
       <a href="index.html" class="brand-group">
-        <div class="brand-monogram">WDA</div>
-        <div class="brand-text">
-          <span class="brand-name">William Danial Arthur</span>
-          <span class="brand-sub">Oklahoma City &bull; Tech Founder &bull; Mobile Dev</span>
+        <div class="brand-logo-box">W</div>
+        <div class="brand-details">
+          <span class="brand-title">William Danial Arthur</span>
+          <span class="brand-subtitle">Proud Oklahoma City Native</span>
         </div>
       </a>
 
       <nav>
-        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">&#9776;</button>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">&#9776;</button>
         <ul class="nav-links" id="navLinks">
-          <li><a href="index.html#flagshipSystems" class="nav-link">Flagship Systems</a></li>
-          <li><a href="index.html#standaloneApps" class="nav-link">Mobile Apps</a></li>
-          <li><a href="index.html#architecture" class="nav-link">Invariants</a></li>
-          <li><a href="index.html#about" class="nav-link">About</a></li>
-          <li><a href="mailto:contact@williamdanialarthur.me" class="nav-cta">Direct Contact</a></li>
+          <li class="nav-item"><a href="index.html#featuredWork">Featured Work</a></li>
+          <li class="nav-item"><a href="index.html#mobileApps">Mobile Apps</a></li>
+          <li class="nav-item"><a href="index.html#about">About &amp; Stack</a></li>
+          <li class="nav-item"><a href="mailto:contact@williamdanialarthur.me" class="nav-contact-btn">Direct Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -110,9 +96,9 @@
             </p>
           </div>
 
-          <!-- Section 2: Core Engineering Invariants -->
+          <!-- Section 2: Core Architectural Highlights -->
           <div class="detail-text-block">
-            <h2>Core Engineering Invariants</h2>
+            <h2>Core Architectural Highlights</h2>
             
             <h3 style="font-size: 1.125rem; font-weight: 700; color: var(--text-white); margin: 20px 0 8px 0;">
               1. Integer-Cent Currency Arithmetic
@@ -144,7 +130,7 @@
                 <tr>
                   <th>Architecture Layer</th>
                   <th>Implementation</th>
-                  <th>Primary Invariant</th>
+                  <th>Primary Standard</th>
                 </tr>
               </thead>
               <tbody>
@@ -199,12 +185,16 @@
                 <span class="meta-v">79 Active Tools</span>
               </li>
               <li>
-                <span class="meta-k">Data Telemetry:</span>
-                <span class="meta-v">0 bytes (Zero Cloud)</span>
+                <span class="meta-k">Architecture:</span>
+                <span class="meta-v">Client-Side SPA &amp; Desktop</span>
               </li>
               <li>
-                <span class="meta-k">Tracking Cookies:</span>
-                <span class="meta-v">0 Cookies</span>
+                <span class="meta-k">Primary Stack:</span>
+                <span class="meta-v">TypeScript, React, Vite</span>
+              </li>
+              <li>
+                <span class="meta-k">Desktop Package:</span>
+                <span class="meta-v">Electron (NSIS Installer)</span>
               </li>
               <li>
                 <span class="meta-k">Live Domain:</span>
