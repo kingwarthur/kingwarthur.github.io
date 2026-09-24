@@ -3,20 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
   <title>William Danial Arthur | Web Developer, Mobile App Developer &amp; Tech Business Owner (OKC)</title>
-  <meta name="description" content="Portfolio of William Danial Arthur — born and living in Oklahoma City, OK. Web developer, Android mobile developer, and founder of Camelot Web Tools." />
+  <meta name="description" content="Portfolio of William Danial Arthur - born and living in Oklahoma City, OK. Web developer, Android mobile developer, and founder of Camelot Web Tools." />
   
-  <link rel="stylesheet" href="style.css?v=5.0" />
   <link rel="icon" type="image/png" href="assets/images/cwt-app-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Site Navigation -->
+  <!-- Top Scroll Progress Indicator -->
+  <div id="scroll-progress"></div>
+
+  <!-- Site Navigation Header -->
   <header class="site-header">
-    <div class="container nav-container">
+    <div class="container nav-row">
       <a href="index.html" class="brand-group">
         <div class="brand-logo-box">W</div>
         <div class="brand-details">
@@ -28,37 +34,36 @@
       <nav>
         <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu">&#9776;</button>
         <ul class="nav-links" id="navLinks">
-          <li class="nav-item"><a href="#projects">Projects</a></li>
-          <li class="nav-item"><a href="#mobileApps">Mobile Apps</a></li>
-          <li class="nav-item"><a href="#about">About &amp; Stack</a></li>
-          <li class="nav-item"><a href="mailto:wdarthur1990@gmail.com" class="nav-contact-btn">Get In Touch</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#mobileApps">Mobile Apps</a></li>
+          <li><a href="#about">About &amp; Stack</a></li>
+          <li><a href="mailto:wdarthur1990@gmail.com" class="nav-contact-btn">Get In Touch</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <!-- Hero Section with Integrated Oklahoma City Skyline -->
+    <!-- Hero Section with Oklahoma City Skyline Parallax -->
     <section class="hero-wrapper">
-      <div class="hero-skyline-bg">
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-location-tag">
-              <span class="hero-location-dot"></span>
-              <span>Born &amp; Living in Oklahoma City, OK</span>
-            </div>
-            <h1 class="hero-headline">William Danial Arthur</h1>
-            <p class="hero-subheadline">
-              Web Developer, Mobile App Developer &amp; Tech Business Owner
-            </p>
-            <p class="hero-paragraph">
-              Founder of <strong>Camelot Web Tools</strong>. I build client-side web platforms, native Android applications with Kotlin and Jetpack Compose, and interactive simulation engines.
-            </p>
-            <div class="hero-actions">
-              <a href="#projects" class="btn-solid-white">View Projects &darr;</a>
-              <a href="https://camelotwebtools.com" target="_blank" rel="noopener" class="btn-outline-white">Camelot Web Tools &rarr;</a>
-              <a href="mailto:wdarthur1990@gmail.com" class="btn-outline-white">Email Me</a>
-            </div>
+      <div class="hero-skyline-bg" id="heroSkyline"></div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-location-tag">
+            <span class="hero-location-dot"></span>
+            <span>Born &amp; Living in Oklahoma City, OK</span>
+          </div>
+          <h1 class="hero-headline">William Danial Arthur</h1>
+          <p class="hero-subheadline">
+            Web Developer, Mobile App Developer &amp; Tech Business Owner
+          </p>
+          <p class="hero-paragraph">
+            Founder of <strong>Camelot Web Tools</strong>. I build client-side web platforms, native Android applications with Kotlin and Jetpack Compose, and interactive simulation engines.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-solid-white">View Projects &darr;</a>
+            <a href="https://camelotwebtools.com" target="_blank" rel="noopener" class="btn-outline-white">Camelot Web Tools &rarr;</a>
+            <a href="mailto:wdarthur1990@gmail.com" class="btn-outline-white">Email Me</a>
           </div>
         </div>
       </div>
@@ -75,20 +80,20 @@
         </div>
 
         <!-- Filter Tabs -->
-        <div class="filter-tabs">
+        <div class="filter-tabs" id="filterTabs">
           <button class="filter-tab active" data-filter="all">All Work</button>
-          <button class="filter-tab" data-filter="web">Web</button>
-          <button class="filter-tab" data-filter="mobile">Android</button>
+          <button class="filter-tab" data-filter="web">Web &amp; Desktop</button>
+          <button class="filter-tab" data-filter="mobile">Android Native</button>
           <button class="filter-tab" data-filter="simulation">Simulations</button>
           <button class="filter-tab" data-filter="bio">Bioinformatics</button>
         </div>
       </div>
 
-      <!-- Project Stack -->
+      <!-- Project Stack Cards -->
       <div class="project-stack">
 
         <!-- 1. CAMELOT WEB TOOLS -->
-        <article class="project-card" data-category="web">
+        <article class="project-card is-visible" data-category="web">
           <div class="project-media">
             <div class="chrome-bar">
               <div class="chrome-dots">
@@ -111,13 +116,13 @@
               </div>
               <h3 class="project-title">Camelot Web Tools (CWT)</h3>
               <p class="project-desc">
-                A 100% client-side multi-tool suite offering 79 utilities for freelancers, contractors, and small businesses—including vector PDF form filling and Bates stamping, invoice generation, e-signatures, document conversion, and financial calculators. Runs entirely inside the browser and desktop runtimes with zero external server dependencies.
+                A 100% client-side multi-tool suite offering 79 utilities for freelancers, contractors, and small businesses: including vector PDF form filling and Bates stamping, invoice generation, e-signatures, document conversion, and financial calculators. Runs entirely inside the browser and desktop runtimes with zero external server dependencies.
               </p>
               <ul class="bullet-features">
                 <li>Integer-cent currency arithmetic eliminating IEEE-754 floating-point errors.</li>
                 <li>In-memory Bates stamping with sequential numbering across multi-page PDF bundles.</li>
-                <li>Client-side cryptographic hashing envelopes and PDF generation via <code>pdf-lib</code>.</li>
-                <li>MCP Server package (<code>camelotwebtools-mcp</code>) providing 79 tools for automated workflows and developer environments.</li>
+                <li>Client-side cryptographic hashing envelopes and PDF generation via pdf-lib.</li>
+                <li>MCP Server package (camelotwebtools-mcp) providing 79 tools for automated workflows and developer environments.</li>
               </ul>
               <div class="tag-cluster">
                 <span class="tag-item">React 18</span>
@@ -137,7 +142,7 @@
         </article>
 
         <!-- 2. CWT MOBILE APP -->
-        <article class="project-card reverse" data-category="mobile">
+        <article class="project-card reverse is-visible" data-category="mobile">
           <div class="project-media">
             <div class="chrome-bar">
               <div class="chrome-dots">
@@ -165,12 +170,12 @@
               </div>
               <h3 class="project-title">Camelot Web Tools: Mobile App</h3>
               <p class="project-desc">
-                The native Android edition of Camelot Web Tools, built with Kotlin and Jetpack Compose. Delivers the complete 75+ utility catalog offline on Android 15+ devices using AndroidX <code>WebViewAssetLoader</code> for local asset virtualization and MediaStore Scoped Storage for instantaneous PDF exports.
+                The native Android edition of Camelot Web Tools, built with Kotlin and Jetpack Compose. Delivers the complete 75+ utility catalog offline on Android 15+ devices using AndroidX WebViewAssetLoader for local asset virtualization and MediaStore Scoped Storage for instantaneous PDF exports.
               </p>
               <ul class="bullet-features">
                 <li>Offline execution: entire catalog runs on-device with zero server pings.</li>
-                <li><code>WebViewAssetLoader</code> virtual domain bypassing CORS and file-scheme restrictions.</li>
-                <li>Android <code>MediaStore</code> Scoped Storage integration for instantaneous PDF exports.</li>
+                <li>WebViewAssetLoader virtual domain bypassing CORS and file-scheme restrictions.</li>
+                <li>Android MediaStore Scoped Storage integration for instantaneous PDF exports.</li>
                 <li>Signed and compiled as an optimized release .AAB for Google Play.</li>
               </ul>
               <div class="tag-cluster">
@@ -190,7 +195,7 @@
         </article>
 
         <!-- 3. THE CATTLE TYCOON GAME -->
-        <article class="project-card" data-category="simulation">
+        <article class="project-card is-visible" data-category="simulation">
           <div class="project-media">
             <div class="chrome-bar">
               <div class="chrome-dots">
@@ -213,7 +218,7 @@
               </div>
               <h3 class="project-title">The Cattle Tycoon Game</h3>
               <p class="project-desc">
-                A strategic agricultural ranching and livestock genetics simulation built with React 19. Players manage herds across 40 seasonal cycles—breeding multi-species bloodlines, navigating commodity market fluctuations, and entering livestock in judged county fair competitions with dynamic procedural commentary.
+                A strategic agricultural ranching and livestock genetics simulation built with React 19. Players manage herds across 40 seasonal cycles: breeding multi-species bloodlines, navigating commodity market fluctuations, and entering livestock in judged county fair competitions with dynamic procedural commentary.
               </p>
               <ul class="bullet-features">
                 <li>Multi-species genetics engine breeding 4 species across 5 rarity tiers.</li>
@@ -236,7 +241,7 @@
         </article>
 
         <!-- 4. ORIGO BIOINFORMATICS ATLAS -->
-        <article class="project-card reverse" data-category="bio">
+        <article class="project-card reverse is-visible" data-category="bio">
           <div class="project-media">
             <div class="chrome-bar">
               <div class="chrome-dots">
@@ -262,7 +267,7 @@
                 An interactive bioinformatics platform that reconstructs 300,000 years of human migration. Users can upload raw DNA data (23andMe, AncestryDNA, or VCF files), which is decompressed and parsed entirely client-side to map Y-DNA and mtDNA lineages onto an interactive 4D Three.js WebGL globe with temporal scrubbing.
               </p>
               <ul class="bullet-features">
-                <li>Universal client-side genomic parser decompressing <code>.vcf.gz</code> using in-memory <code>pako</code>.</li>
+                <li>Universal client-side genomic parser decompressing .vcf.gz using in-memory pako.</li>
                 <li>Phylogenetic resolver mapping paternal Y-DNA and maternal mtDNA branches to archaeological cultures.</li>
                 <li>Interactive 4D Three.js WebGL globe with dynamic temporal scrubbing from 300,000 BCE to modern day.</li>
                 <li>Evidence Workbench correlating genetic claims with published DOI citations and radiocarbon-dated fossils.</li>
@@ -410,7 +415,7 @@
             I was born in Oklahoma City and live and work here today. I am a full-stack web developer, native Android mobile developer, and independent tech founder.
           </p>
           <p>
-            My primary focus over the last several years has been building <strong>Camelot Web Tools</strong> from the ground up—writing the client-side calculation and document generation engines in TypeScript, designing the UI, packaging desktop builds with Electron, and porting the entire system to native Android with Kotlin and Jetpack Compose.
+            My primary focus over the last several years has been building <strong>Camelot Web Tools</strong> from the ground up: writing the client-side calculation and document generation engines in TypeScript, designing the UI, packaging desktop builds with Electron, and porting the entire system to native Android with Kotlin and Jetpack Compose.
           </p>
           <p>
             Outside of CWT, I build simulations and data tools, including an agricultural genetics simulation game and a 4D population genetics atlas that parses raw genome files in the browser.
@@ -420,7 +425,7 @@
           </p>
           <div class="about-contact-links">
             <a href="mailto:wdarthur1990@gmail.com" class="btn-solid-white">wdarthur1990@gmail.com</a>
-            <a href="https://github.com" target="_blank" rel="noopener" class="btn-outline-white">GitHub Profile &rarr;</a>
+            <a href="https://github.com/kingwarthur" target="_blank" rel="noopener" class="btn-outline-white">GitHub Profile &rarr;</a>
           </div>
         </div>
 
@@ -538,6 +543,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=5.0"></script>
+  <script src="script.js"></script>
 </body>
 </html>
