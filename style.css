@@ -226,13 +226,14 @@ code {
 .hero-skyline-bg {
   position: relative;
   width: 100%;
-  min-height: 480px;
+  min-height: 560px;
   background:
-    linear-gradient(180deg, rgba(9, 9, 11, 0.4) 0%, rgba(9, 9, 11, 0.85) 65%, #09090b 100%),
-    url('assets/images/okc-skyline.jpg') center 35% / cover no-repeat;
+    linear-gradient(90deg, rgba(9, 9, 11, 0.93) 0%, rgba(9, 9, 11, 0.76) 42%, rgba(9, 9, 11, 0.2) 75%, rgba(9, 9, 11, 0.4) 100%),
+    linear-gradient(180deg, rgba(9, 9, 11, 0.35) 0%, transparent 30%, rgba(9, 9, 11, 0.35) 72%, rgba(9, 9, 11, 0.92) 95%, #09090b 100%),
+    url('assets/images/okc-skyline.jpg') center 76% / cover no-repeat;
   display: flex;
   align-items: center;
-  padding: 72px 0 64px 0;
+  padding: 84px 0 72px 0;
 }
 
 .hero-content {
